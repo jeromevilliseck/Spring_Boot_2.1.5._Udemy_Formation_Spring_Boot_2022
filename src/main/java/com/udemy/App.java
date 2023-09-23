@@ -1,6 +1,7 @@
 package com.udemy;
 
 import com.udemy.controller.InvoiceController;
+import com.udemy.controller.InvoiceControllerChambouleToutMagasin2;
 import com.udemy.controller.InvoiceControllerMichel;
 import com.udemy.repository.InvoiceRepository;
 import com.udemy.repository.InvoiceRepositoryInterface;
@@ -47,7 +48,27 @@ public class App
             invoiceServiceMichel.setInvoiceRepositoryMichel(invoiceRepositoryMichel);
 
             invoiceControllerMichel.createInvoice();
+        } else if (configuration == 3){
+            //Branchement d'un repository 2 sur service 1, branchement service 1 sur controleur 2
+            InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
+            InvoiceService invoiceService = new InvoiceService();
+            invoiceControllerMichel.setService(invoiceService);
+
+            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
+            invoiceService.setInvoiceRepository(invoiceRepositoryMichel);
+            invoiceControllerMichel.createInvoice();
+        } else if (configuration == 4){
+            //Branchement d'un repository 2 sur service 1, branchement service 1 sur controleur 3
+            InvoiceControllerChambouleToutMagasin2 invoiceControllerChambouleToutMagasin2 = new InvoiceControllerChambouleToutMagasin2();
+            InvoiceService invoiceService = new InvoiceService();
+            invoiceControllerChambouleToutMagasin2.setInvoiceService(invoiceService);
+
+            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
+            invoiceService.setInvoiceRepository(invoiceRepositoryMichel);
+            invoiceControllerChambouleToutMagasin2.createInvoice();
         }
+        //Danger cette façon de brancher les repository sur les services et les services sur les controleurs selon les demandes client
+        //peut créer des centaines de combinatoires
 
     }
 }

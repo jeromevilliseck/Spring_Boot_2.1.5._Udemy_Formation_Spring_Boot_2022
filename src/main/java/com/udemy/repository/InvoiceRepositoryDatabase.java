@@ -10,6 +10,6 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 
     public void create(Invoice invoice){
         invoices.add(invoice);
-        System.out.println("Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
+        System.out.println("DB -> Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
     }
 }

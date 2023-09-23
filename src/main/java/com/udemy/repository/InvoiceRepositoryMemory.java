@@ -10,6 +10,6 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
     public void create(Invoice invoice){
         invoices.add(invoice);
-        System.out.println("Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
+        System.out.println("MEM -> Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
     }
 }

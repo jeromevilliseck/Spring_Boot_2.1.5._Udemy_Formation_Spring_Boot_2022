@@ -10,7 +10,7 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
         return invoiceRepositoryMichel;
     }
 
-    public void setInvoiceRepositoryMichel(InvoiceRepositoryInterface invoiceRepositoryMichel) {
+    public void setInvoiceRepository(InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }
 

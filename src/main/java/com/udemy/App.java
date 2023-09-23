@@ -50,6 +50,8 @@ public class App {
             case "prefix":
                 invoiceService = new InvoiceServicePrefix();
                 break;
+            default:
+                invoiceService = new InvoiceServiceNumber();
         }
         switch (repositoryType) {
             case "memory":
@@ -58,7 +60,11 @@ public class App {
             case "database":
                 invoiceRepository = new InvoiceRepositoryDatabase();
                 break;
+            default:
+                invoiceRepository = new InvoiceRepositoryMemory();
         }
+        invoiceController.setInvoiceService(invoiceService);
+        invoiceService.setInvoiceRepository(invoiceRepository);
         invoiceController.createInvoice();
     }
 }

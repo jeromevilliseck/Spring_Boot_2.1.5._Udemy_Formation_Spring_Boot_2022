@@ -16,7 +16,7 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         return service;
     }
 
-    public void setService(InvoiceServiceInterface service) {
+    public void setInvoiceService(InvoiceServiceInterface service) {
         this.service = service;
     }
 }

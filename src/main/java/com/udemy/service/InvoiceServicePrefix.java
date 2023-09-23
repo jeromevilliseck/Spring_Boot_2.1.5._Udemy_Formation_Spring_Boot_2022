@@ -3,7 +3,7 @@ package com.udemy.service;
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 
-public class InvoiceServiceMichel implements InvoiceServiceInterface {
+public class InvoiceServicePrefix implements InvoiceServiceInterface {
     private static long lastNumber=112L;
 
     public InvoiceRepositoryInterface getInvoiceRepositoryMichel() {

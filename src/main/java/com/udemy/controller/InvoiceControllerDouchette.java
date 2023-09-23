@@ -3,7 +3,7 @@ package com.udemy.controller;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 
-public class InvoiceControllerChambouleToutMagasin2 implements InvoiceControllerInterface{
+public class InvoiceControllerDouchette implements InvoiceControllerInterface{
     public InvoiceServiceInterface getInvoiceService() {
         return invoiceService;
     }

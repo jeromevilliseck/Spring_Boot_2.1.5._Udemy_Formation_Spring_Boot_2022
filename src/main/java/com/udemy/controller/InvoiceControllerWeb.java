@@ -3,7 +3,7 @@ package com.udemy.controller;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 
-public class InvoiceControllerMichel implements InvoiceControllerInterface {
+public class InvoiceControllerWeb implements InvoiceControllerInterface {
     private InvoiceServiceInterface service;
     public void createInvoice() {
         String customerName = "Tesla";

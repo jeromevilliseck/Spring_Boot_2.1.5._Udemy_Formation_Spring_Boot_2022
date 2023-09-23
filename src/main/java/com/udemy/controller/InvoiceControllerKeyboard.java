@@ -5,7 +5,7 @@ import com.udemy.service.InvoiceServiceInterface;
 
 import java.util.Scanner;
 
-public class InvoiceController implements InvoiceControllerInterface {
+public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
     private InvoiceServiceInterface invoiceService;
     public void createInvoice() {
         System.out.println( "WHat is customer name" );

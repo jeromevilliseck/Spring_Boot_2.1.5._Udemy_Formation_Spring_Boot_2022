@@ -1,74 +1,64 @@
 package com.udemy;
 
-import com.udemy.controller.InvoiceController;
-import com.udemy.controller.InvoiceControllerChambouleToutMagasin2;
-import com.udemy.controller.InvoiceControllerMichel;
-import com.udemy.repository.InvoiceRepository;
+import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.controller.InvoiceControllerKeyboard;
+import com.udemy.controller.InvoiceControllerDouchette;
+import com.udemy.controller.InvoiceControllerWeb;
 import com.udemy.repository.InvoiceRepositoryInterface;
-import com.udemy.repository.InvoiceRepositoryMichel;
-import com.udemy.service.InvoiceService;
+import com.udemy.repository.InvoiceRepositoryMemory;
+import com.udemy.repository.InvoiceRepositoryDatabase;
 import com.udemy.service.InvoiceServiceInterface;
-import com.udemy.service.InvoiceServiceMichel;
+import com.udemy.service.InvoiceServiceNumber;
+import com.udemy.service.InvoiceServicePrefix;
 
 import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Dans quelle configuration etes vous");
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Quel est le type de controleur que vous souhaitez utiliser (keyboard, Douchette, Web)");
         Scanner sc = new Scanner(System.in);
-        int configuration = sc.nextInt();
-        if (configuration == 1){
-            InvoiceController invoiceController = new InvoiceController();
+        String controleurType = sc.nextLine();
+        System.out.println("Quel est le type de service (number, prefix) ?");
+        String serviceType = sc.nextLine();
+        System.out.println("Quel est le type de repository (memory, database) ?");
+        String repositoryType = sc.nextLine();
 
-            //Injection de dépendance classique le controleur recois une implémentation concrete de service
-            //On dit qu'on injecte le service dans le contrôleur
-            InvoiceService invoiceService = new InvoiceService();
-            invoiceController.setInvoiceService(invoiceService);
+        InvoiceControllerInterface invoiceController;
+        InvoiceServiceInterface invoiceService;
+        InvoiceRepositoryInterface invoiceRepository;
 
-            //Injection du bon repository dans le bon service
-            InvoiceRepository invoiceRepository = new InvoiceRepository();
-            invoiceService.setInvoiceRepository(invoiceRepository);
-
-            //La méthode peut donc fonctionner
-            invoiceController.createInvoice();
-        } else if (configuration == 2){
-            InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
-
-            //Injections des dépendances
-            InvoiceServiceMichel invoiceServiceMichel = new InvoiceServiceMichel();
-            invoiceControllerMichel.setService(invoiceServiceMichel);
-
-            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
-            invoiceServiceMichel.setInvoiceRepositoryMichel(invoiceRepositoryMichel);
-
-            invoiceControllerMichel.createInvoice();
-        } else if (configuration == 3){
-            //Branchement d'un repository 2 sur service 1, branchement service 1 sur controleur 2
-            InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
-            InvoiceService invoiceService = new InvoiceService();
-            invoiceControllerMichel.setService(invoiceService);
-
-            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
-            invoiceService.setInvoiceRepository(invoiceRepositoryMichel);
-            invoiceControllerMichel.createInvoice();
-        } else if (configuration == 4){
-            //Branchement d'un repository 2 sur service 1, branchement service 1 sur controleur 3
-            InvoiceControllerChambouleToutMagasin2 invoiceControllerChambouleToutMagasin2 = new InvoiceControllerChambouleToutMagasin2();
-            InvoiceService invoiceService = new InvoiceService();
-            invoiceControllerChambouleToutMagasin2.setInvoiceService(invoiceService);
-
-            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
-            invoiceService.setInvoiceRepository(invoiceRepositoryMichel);
-            invoiceControllerChambouleToutMagasin2.createInvoice();
+        switch (controleurType) {
+            case "keyboard":
+                invoiceController = new InvoiceControllerKeyboard();
+                break;
+            case "web":
+                invoiceController = new InvoiceControllerWeb();
+                break;
+            case "douchette":
+                invoiceController = new InvoiceControllerDouchette();
+                break;
+            default:
+                invoiceController = new InvoiceControllerWeb();
         }
-        //Danger cette façon de brancher les repository sur les services et les services sur les controleurs selon les demandes client
-        //peut créer des centaines de combinatoires
-
+        switch (controleurType) {
+            case "number":
+                invoiceService = new InvoiceServiceNumber();
+                break;
+            case "prefix":
+                invoiceService = new InvoiceServicePrefix();
+                break;
+        }
+        switch (repositoryType) {
+            case "memory":
+                invoiceRepository = new InvoiceRepositoryMemory();
+                break;
+            case "database":
+                invoiceRepository = new InvoiceRepositoryDatabase();
+                break;
+        }
+        invoiceController.createInvoice();
     }
 }

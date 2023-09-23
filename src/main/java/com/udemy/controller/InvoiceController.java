@@ -15,4 +15,12 @@ public class InvoiceController implements InvoiceControllerInterface {
         invoice.setCustomerName(customerName);
         invoiceService.createInvoice(invoice);
     }
+
+    public InvoiceServiceInterface getInvoiceService() {
+        return invoiceService;
+    }
+
+    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
+    }
 }

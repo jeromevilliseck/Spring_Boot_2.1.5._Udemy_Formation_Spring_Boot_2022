@@ -2,6 +2,12 @@ package com.udemy;
 
 import com.udemy.controller.InvoiceController;
 import com.udemy.controller.InvoiceControllerMichel;
+import com.udemy.repository.InvoiceRepository;
+import com.udemy.repository.InvoiceRepositoryInterface;
+import com.udemy.repository.InvoiceRepositoryMichel;
+import com.udemy.service.InvoiceService;
+import com.udemy.service.InvoiceServiceInterface;
+import com.udemy.service.InvoiceServiceMichel;
 
 import java.util.Scanner;
 
@@ -18,9 +24,28 @@ public class App
         int configuration = sc.nextInt();
         if (configuration == 1){
             InvoiceController invoiceController = new InvoiceController();
+
+            //Injection de dépendance classique le controleur recois une implémentation concrete de service
+            //On dit qu'on injecte le service dans le contrôleur
+            InvoiceService invoiceService = new InvoiceService();
+            invoiceController.setInvoiceService(invoiceService);
+
+            //Injection du bon repository dans le bon service
+            InvoiceRepository invoiceRepository = new InvoiceRepository();
+            invoiceService.setInvoiceRepository(invoiceRepository);
+
+            //La méthode peut donc fonctionner
             invoiceController.createInvoice();
         } else if (configuration == 2){
             InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
+
+            //Injections des dépendances
+            InvoiceServiceMichel invoiceServiceMichel = new InvoiceServiceMichel();
+            invoiceControllerMichel.setService(invoiceServiceMichel);
+
+            InvoiceRepositoryMichel invoiceRepositoryMichel = new InvoiceRepositoryMichel();
+            invoiceServiceMichel.setInvoiceRepositoryMichel(invoiceRepositoryMichel);
+
             invoiceControllerMichel.createInvoice();
         }
 

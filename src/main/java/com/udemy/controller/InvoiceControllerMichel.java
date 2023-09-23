@@ -1,15 +1,14 @@
 package com.udemy.controller;
 
 import com.udemy.entity.Invoice;
-import com.udemy.service.InvoiceServiceMichel;
+import com.udemy.service.InvoiceServiceInterface;
 
-public class InvoiceControllerMichel {
-    public void createInvoiceUsingWebForm() {
+public class InvoiceControllerMichel implements InvoiceControllerInterface {
+    private InvoiceServiceInterface service;
+    public void createInvoice() {
         String customerName = "Tesla";
         Invoice invoice = new Invoice();
         invoice.setCustomerName(customerName);
-
-        InvoiceServiceMichel invoiceService = new InvoiceServiceMichel();
-        invoiceService.createInvoice(invoice);
+        service.createInvoice(invoice);
     }
 }

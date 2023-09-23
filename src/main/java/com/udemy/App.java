@@ -2,9 +2,6 @@ package com.udemy;
 
 import com.udemy.controller.InvoiceController;
 import com.udemy.controller.InvoiceControllerMichel;
-import com.udemy.entity.Invoice;
-import com.udemy.service.InvoiceService;
-import com.udemy.service.InvoiceServiceMichel;
 
 import java.util.Scanner;
 
@@ -21,10 +18,10 @@ public class App
         int configuration = sc.nextInt();
         if (configuration == 1){
             InvoiceController invoiceController = new InvoiceController();
-            invoiceController.createInvoiceUsingConsole();
+            invoiceController.createInvoice();
         } else if (configuration == 2){
             InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
-            invoiceControllerMichel.createInvoiceUsingWebForm();
+            invoiceControllerMichel.createInvoice();
         }
 
     }

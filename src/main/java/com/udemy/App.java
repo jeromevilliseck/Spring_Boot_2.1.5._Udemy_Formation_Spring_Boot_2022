@@ -18,51 +18,37 @@ import java.util.Scanner;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Quel est le type de controleur que vous souhaitez utiliser (keyboard, Douchette, Web)");
+        System.out.println("Quel est la classe de controleur que vous souhaitez utiliser (keyboard, Douchette, Web)");
         Scanner sc = new Scanner(System.in);
-        String controleurType = sc.nextLine();
-        System.out.println("Quel est le type de service (number, prefix) ?");
-        String serviceType = sc.nextLine();
-        System.out.println("Quel est le type de repository (memory, database) ?");
-        String repositoryType = sc.nextLine();
+        String controleurClass = sc.nextLine();
+        System.out.println("Quel est la classe de service (number, prefix) ?");
+        String serviceClass = sc.nextLine();
+        System.out.println("Quel est la classe de repository (memory, database) ?");
+        String repositoryClass = sc.nextLine();
 
-        InvoiceControllerInterface invoiceController;
-        InvoiceServiceInterface invoiceService;
-        InvoiceRepositoryInterface invoiceRepository;
+        InvoiceControllerInterface invoiceController = null;
+        InvoiceServiceInterface invoiceService = null;
+        InvoiceRepositoryInterface invoiceRepository = null;
 
-        switch (controleurType) {
-            case "keyboard":
-                invoiceController = new InvoiceControllerKeyboard();
-                break;
-            case "web":
-                invoiceController = new InvoiceControllerWeb();
-                break;
-            case "douchette":
-                invoiceController = new InvoiceControllerDouchette();
-                break;
-            default:
-                invoiceController = new InvoiceControllerWeb();
+        /*Ici APP ne changera plus
+        Meme si ajout d'implementations ultérieures de services, controller, repository
+        APP se charge d'instancier les composants de l'architecture
+        APP et les mets en relation grâce à l'injection de dépendances
+         */
+
+        //1 APP Instancie les composants de l'architecture par reflexivité
+        try {
+            //Reflexivité java : instancier un objet sur la base d'un nom de class donné par l'utilisateur
+            //Pour que ça marche il faut utiliser la classe chemin du package complet inclus
+            invoiceController = (InvoiceControllerInterface) Class.forName(controleurClass).getDeclaredConstructor().newInstance();
+            invoiceService = (InvoiceServiceInterface) Class.forName(serviceClass).getDeclaredConstructor().newInstance();
+            invoiceRepository = (InvoiceRepositoryInterface) Class.forName(repositoryClass).getDeclaredConstructor().newInstance();
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        switch (controleurType) {
-            case "number":
-                invoiceService = new InvoiceServiceNumber();
-                break;
-            case "prefix":
-                invoiceService = new InvoiceServicePrefix();
-                break;
-            default:
-                invoiceService = new InvoiceServiceNumber();
-        }
-        switch (repositoryType) {
-            case "memory":
-                invoiceRepository = new InvoiceRepositoryMemory();
-                break;
-            case "database":
-                invoiceRepository = new InvoiceRepositoryDatabase();
-                break;
-            default:
-                invoiceRepository = new InvoiceRepositoryMemory();
-        }
+
+        //2 APP les mets en relation grace à l'injection de dépendance, (mets un service concret dans un controller concret par ex)
         invoiceController.setInvoiceService(invoiceService);
         invoiceService.setInvoiceRepository(invoiceRepository);
         invoiceController.createInvoice();

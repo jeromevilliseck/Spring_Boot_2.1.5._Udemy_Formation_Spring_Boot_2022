@@ -13,13 +13,10 @@
     <!--C:\Users\VILLISECK\.m2\repository\org\springframework\spring-context\5.3.30\spring-context-5.3.30.jar!\META-INF\spring.schemas-->
     <context:annotation-config/>
     <!--Le bean controleur contient un @Autowired sur l'attribut service-->
-    <bean class="com.udemy.controller.InvoiceControllerWeb"></bean>
+    <bean class="com.udemy.controller.InvoiceControllerWeb" />
 
     <!--Injection d'un service dans le controleur-->
-    <bean class="com.udemy.service.InvoiceServicePrefix">
-        <property name="lastNumber" value="112"></property>
-        <property name="prefix" value="INV_"></property>
-    </bean>
+    <bean class="com.udemy.service.InvoiceServicePrefix" />
 
     <!--Les beans sont injectés si ils sont déclarés dans ce fichier, il suffit de changer déclaration de beans pour changer une injection de dépendance-->
     <!--On peut changer ci dessous InvoiceRepositoryDatabase par InvoiceRepositoryMemory pour comprendre-->

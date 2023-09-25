@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Inversion de controle : instanciation par reflexivité, puis injection de dépendance">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,7 @@
       <workItem from="1695115638745" duration="502000" />
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
-      <workItem from="1695631275037" duration="3536000" />
+      <workItem from="1695631275037" duration="4144000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -158,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695483665035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié">
+      <option name="closed" value="true" />
+      <created>1695635082849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695635082849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +189,7 @@
     <MESSAGE value="Inversion de controle : ecriture des interfaces" />
     <MESSAGE value="Inversion de controle : injections de dependances faites dans le App" />
     <MESSAGE value="Inversion de controle : instanciation par reflexivité, puis injection de dépendance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inversion de controle : instanciation par reflexivité, puis injection de dépendance" />
+    <MESSAGE value="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié" />
   </component>
 </project>

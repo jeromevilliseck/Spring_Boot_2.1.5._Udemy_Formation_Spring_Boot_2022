@@ -6,6 +6,8 @@ import com.udemy.repository.InvoiceRepositoryInterface;
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
     private long lastNumber;
     private String prefix;
+    private InvoiceRepositoryInterface invoiceRepositoryMichel;
+
     public InvoiceRepositoryInterface getInvoiceRepositoryMichel() {
         return invoiceRepositoryMichel;
     }
@@ -13,8 +15,6 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     public void setInvoiceRepository(InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }
-
-    private InvoiceRepositoryInterface invoiceRepositoryMichel;
 
     public void createInvoice(Invoice invoice){
         invoice.setNumber(prefix+(++lastNumber));

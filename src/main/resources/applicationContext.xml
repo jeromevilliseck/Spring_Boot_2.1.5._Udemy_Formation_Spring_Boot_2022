@@ -8,16 +8,13 @@
        https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-    <!--Ligne ci dessous fait le lien entre le fichier de propriété et les annotations @Value-->
     <context:property-placeholder location="classpath:application.properties"/>
+    <!--Balise permettant d'indiquer à partir d'ou le scan démarre sans cette balise l'appli ne marche pas-->
+    <context:component-scan base-package="com.udemy" />
 
-    <!--Le bean controleur contient un @Autowired sur l'attribut service-->
+    <!--
     <bean class="com.udemy.controller.InvoiceControllerWeb" />
-
-    <!--Injection d'un service dans le controleur-->
     <bean class="com.udemy.service.InvoiceServicePrefix" />
-
-    <!--Les beans sont injectés si ils sont déclarés dans ce fichier, il suffit de changer déclaration de beans pour changer une injection de dépendance-->
-    <!--On peut changer ci dessous InvoiceRepositoryDatabase par InvoiceRepositoryMemory pour comprendre-->
     <bean class="com.udemy.repository.InvoiceRepositoryDatabase"/>
+    -->
 </beans>

@@ -4,7 +4,9 @@ import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
+@Service
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
     @Value("${invoice.lastnumber}")
     private long lastNumber;

@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
-    <!--Detecte automatiquement en byType une implémentation valide d'une interface attribut d'un bean en parcourant les beans-->
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--Comme le controleur contient un attribut invoiceService de type InvoiceServiceInterface, detection automatique d'un bean InvoiceService ne dessous-->
-    <bean class="com.udemy.controller.InvoiceControllerDouchette"></bean>
+    <!--Activation de l'autowiring par annotation @Autowired-->
 
-    <!--Comme le service contient une invoiceRepositoryInterface il trouve une implémentation juste après valide-->
+    <!--le prefix context est defini en haut dans les lignes 3,7,8-->
+    <!--C:\Users\VILLISECK\.m2\repository\org\springframework\spring-context\5.3.30\spring-context-5.3.30.jar!\META-INF\spring.schemas-->
+    <context:annotation-config/>
+    <!--Le bean controleur contient un @Autowired sur l'attribut service-->
+    <bean class="com.udemy.controller.InvoiceControllerWeb"></bean>
+
+    <!--Injection d'un service dans le controleur-->
     <bean class="com.udemy.service.InvoiceServicePrefix">
         <property name="lastNumber" value="112"></property>
         <property name="prefix" value="INV_"></property>
     </bean>
 
-    <!--Comme le id contient invoiceRepository -> le InvoiceRepositoryInterface de invoiceService est instancié avec-->
+    <!--Les beans sont injectés si ils sont déclarés dans ce fichier, il suffit de changer déclaration de beans pour changer une injection de dépendance-->
+    <!--On peut changer ci dessous InvoiceRepositoryDatabase par InvoiceRepositoryMemory pour comprendre-->
     <bean class="com.udemy.repository.InvoiceRepositoryDatabase"/>
 </beans>

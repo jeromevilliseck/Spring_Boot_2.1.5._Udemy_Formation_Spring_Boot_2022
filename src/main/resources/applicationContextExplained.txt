@@ -37,3 +37,15 @@ librairies transitives a spring-context comme spring-aop par exemple
         <property name="prefix" value="INV_"></property>
 </bean>
 
+-----EN TETE DU FICHIER XML
+
+<context:annotation-config>
+--> context est un espace de nommage spécifique -> ici correspond a External Librairies -> Maven: org.spring-context -> puis la dépendance transitive -> spring beans
+--> et la balise annotation-config est exploitée via la librairie spring-context
+
+xmlns="http://www.springframework.org/schema/beans"
+--> l'espace de nommage par defaut pour les beans prends cette norme la
+
+xsi:schemaLocation
+-->reference un fichier xsd, qui explique la grammaire de l'espace de nommage, sous entendu les balises que l'on peut utiliser et comment elles fonctionnent
+-->ce fichier se trouve dans la librairie spring beans

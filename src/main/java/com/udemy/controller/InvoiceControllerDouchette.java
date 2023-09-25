@@ -2,6 +2,7 @@ package com.udemy.controller;
 
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class InvoiceControllerDouchette implements InvoiceControllerInterface{
     public InvoiceServiceInterface getInvoiceService() {

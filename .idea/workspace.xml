@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Utilisation d'un autowire global">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Utilisation d'un autowire by type global">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerDouchette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +102,7 @@
       <workItem from="1695115638745" duration="502000" />
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
-      <workItem from="1695631275037" duration="7935000" />
+      <workItem from="1695631275037" duration="11454000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -210,7 +216,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695647984790</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Utilisation d'un autowire by name global">
+      <option name="closed" value="true" />
+      <created>1695648131725</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695648131725</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Utilisation d'un autowire by type global">
+      <option name="closed" value="true" />
+      <created>1695648287801</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695648287801</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +265,8 @@
     <MESSAGE value="Utilisation des injections de valeurs par configuration dans les attributs des beans - correctif" />
     <MESSAGE value="Utilisation des autowire pour injecter autocmatiquement les beans par nom" />
     <MESSAGE value="Utilisation d'un autowire global" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utilisation d'un autowire global" />
+    <MESSAGE value="Utilisation d'un autowire by name global" />
+    <MESSAGE value="Utilisation d'un autowire by type global" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utilisation d'un autowire by type global" />
   </component>
 </project>

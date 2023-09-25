@@ -1,19 +1,8 @@
 package com.udemy;
 
 import com.udemy.controller.InvoiceControllerInterface;
-import com.udemy.controller.InvoiceControllerKeyboard;
-import com.udemy.controller.InvoiceControllerDouchette;
-import com.udemy.controller.InvoiceControllerWeb;
-import com.udemy.repository.InvoiceRepositoryInterface;
-import com.udemy.repository.InvoiceRepositoryMemory;
-import com.udemy.repository.InvoiceRepositoryDatabase;
-import com.udemy.service.InvoiceServiceInterface;
-import com.udemy.service.InvoiceServiceNumber;
-import com.udemy.service.InvoiceServicePrefix;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.Scanner;
 
 /**
  * Hello world!

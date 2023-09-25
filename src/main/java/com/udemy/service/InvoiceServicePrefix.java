@@ -2,10 +2,12 @@ package com.udemy.service;
 
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
     private long lastNumber;
     private String prefix;
+    @Autowired
     private InvoiceRepositoryInterface invoiceRepositoryMichel;
 
     public InvoiceRepositoryInterface getInvoiceRepositoryMichel() {

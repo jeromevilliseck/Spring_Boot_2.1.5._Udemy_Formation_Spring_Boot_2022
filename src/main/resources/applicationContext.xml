@@ -7,7 +7,7 @@
     <bean id="invoiceServiceReference" class="com.udemy.service.InvoiceServicePrefix">
         <property name="invoiceRepository" ref="invoiceRepositoryReference"/>
     </bean>
-    <bean class="com.udemy.controller.InvoiceControllerWeb">
+    <bean class="com.udemy.controller.InvoiceControllerDouchette">
         <property name="invoiceService" ref="invoiceServiceReference"/>
     </bean>
     <bean id="invoiceRepositoryReference" class="com.udemy.repository.InvoiceRepositoryDatabase"/>

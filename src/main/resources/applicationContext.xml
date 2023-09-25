@@ -6,7 +6,7 @@
 
     <bean id="invoiceServiceReference" class="com.udemy.service.InvoiceServicePrefix">
         <property name="invoiceRepository" ref="invoiceRepositoryReference"/>
-U        <property name="lastNumber" value="112"></property>
+        <property name="lastNumber" value="112"></property>
         <property name="prefix" value="INV_"></property>
     </bean>
     <bean class="com.udemy.controller.InvoiceControllerDouchette">

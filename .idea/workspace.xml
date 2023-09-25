@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerDouchette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerKeyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" afterDir="false" />
     </list>
@@ -103,7 +100,7 @@
       <workItem from="1695115638745" duration="502000" />
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
-      <workItem from="1695631275037" duration="15977000" />
+      <workItem from="1695631275037" duration="16321000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -281,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695656170411</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable">
+      <option name="closed" value="true" />
+      <created>1695657698659</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695657698659</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +327,7 @@
     <MESSAGE value="@Value mise en place" />
     <MESSAGE value="application.properties mise en place + liaison dans l'application context" />
     <MESSAGE value="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository" />
+    <MESSAGE value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
   </component>
 </project>

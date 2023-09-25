@@ -12,7 +12,7 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
 
     @Qualifier("invoiceRepositoryMemory")
     @Autowired
-    private InvoiceRepositoryInterface invoiceRepository;
+    private final InvoiceRepositoryInterface invoiceRepository;
 
     public InvoiceServiceNumber(@Qualifier("invoiceRepositoryMemory") InvoiceRepositoryInterface invoiceRepository) {
         this.invoiceRepository = invoiceRepository;

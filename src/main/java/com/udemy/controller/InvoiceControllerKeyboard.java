@@ -12,7 +12,12 @@ import java.util.Scanner;
 public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
     @Qualifier("invoiceServiceNumber")
     @Autowired
-    private InvoiceServiceInterface invoiceService;
+    private final InvoiceServiceInterface invoiceService;
+
+    public InvoiceControllerKeyboard(@Qualifier("invoiceServiceNumber") InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
+    }
+
     public void createInvoice() {
         System.out.println( "WHat is customer name" );
         Scanner sc = new Scanner(System.in);

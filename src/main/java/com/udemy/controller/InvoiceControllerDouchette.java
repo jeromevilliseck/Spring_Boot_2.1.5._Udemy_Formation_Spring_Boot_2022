@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 public class InvoiceControllerDouchette implements InvoiceControllerInterface{
     @Qualifier("invoiceServiceNumber")
     @Autowired
-    private InvoiceServiceInterface invoiceService;
+    private final InvoiceServiceInterface invoiceService;
 
     public InvoiceControllerDouchette(@Qualifier("invoiceServiceNumber") InvoiceServiceInterface invoiceService) {
         this.invoiceService = invoiceService;

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
 public class InvoiceControllerWeb implements InvoiceControllerInterface {
     @Qualifier("invoiceServicePrefix")
     @Autowired
-    private InvoiceServiceInterface service;
+    private final InvoiceServiceInterface service;
 
     public InvoiceControllerWeb(@Qualifier("invoiceServicePrefix") InvoiceServiceInterface service) {
         this.service = service;

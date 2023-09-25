@@ -16,7 +16,7 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     @Qualifier("invoiceRepositoryDatabase")
     @Autowired
-    private InvoiceRepositoryInterface invoiceRepositoryMichel;
+    private final InvoiceRepositoryInterface invoiceRepositoryMichel;
 
     public InvoiceServicePrefix(@Qualifier("invoiceRepositoryDatabase") InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;

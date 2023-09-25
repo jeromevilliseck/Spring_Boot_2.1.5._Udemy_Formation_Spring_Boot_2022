@@ -28,3 +28,12 @@ Spring -> Injection de dépendance : injection de mon bean repository dans mon b
 -> C'est la dependance spring context qui permet de faire cette injection de dépendance, a mettre dans le pom.xml
 -> en la mettant puis en rechargent maven dans le pom.xml, on peut voir dans intellij les librairies externes qui sont rajoutées, il ya des
 librairies transitives a spring-context comme spring-aop par exemple
+
+- Setter les attributs d'un bean -> ici lastNumber de la classe InvoiceServicePrefix prendra la valeur 112
+- Il y a une conversion automatique de types
+<bean id="invoiceServiceReference" class="com.udemy.service.InvoiceServicePrefix">
+        <property name="invoiceRepository" ref="invoiceRepositoryReference"/>
+        <property name="lastNumber" value="112"></property>
+        <property name="prefix" value="INV_"></property>
+</bean>
+

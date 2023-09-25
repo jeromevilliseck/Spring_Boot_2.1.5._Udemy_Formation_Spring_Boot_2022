@@ -4,8 +4,8 @@ import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
-    private static long lastNumber=112L;
-
+    private long lastNumber;
+    private String prefix;
     public InvoiceRepositoryInterface getInvoiceRepositoryMichel() {
         return invoiceRepositoryMichel;
     }
@@ -15,8 +15,24 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     }
 
     private InvoiceRepositoryInterface invoiceRepositoryMichel;
+
     public void createInvoice(Invoice invoice){
-        invoice.setNumber("INV_"+(++lastNumber));
+        invoice.setNumber(prefix+(++lastNumber));
         invoiceRepositoryMichel.create(invoice);
+    }
+    public long getLastNumber() {
+        return lastNumber;
+    }
+
+    public void setLastNumber(long lastNumber) {
+        this.lastNumber = lastNumber;
+    }
+
+    public String getPrefix() {
+        return prefix;
+    }
+
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
     }
 }

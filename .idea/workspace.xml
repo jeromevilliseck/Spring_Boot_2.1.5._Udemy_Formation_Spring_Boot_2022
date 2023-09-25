@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Changement de controleur par fichier de propriété">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +99,7 @@
       <workItem from="1695115638745" duration="502000" />
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
-      <workItem from="1695631275037" duration="4560000" />
+      <workItem from="1695631275037" duration="5627000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -168,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695635846375</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changement de controleur par fichier de propriété">
+      <option name="closed" value="true" />
+      <created>1695635926760</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695635926760</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +209,7 @@
     <MESSAGE value="Inversion de controle : instanciation par reflexivité, puis injection de dépendance" />
     <MESSAGE value="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié" />
     <MESSAGE value="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété" />
-    <option name="LAST_COMMIT_MESSAGE" value="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété" />
+    <MESSAGE value="Changement de controleur par fichier de propriété" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement de controleur par fichier de propriété" />
   </component>
 </project>

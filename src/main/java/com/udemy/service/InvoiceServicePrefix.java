@@ -3,6 +3,7 @@ package com.udemy.service;
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +13,12 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     private long lastNumber;
     @Value("${invoice.prefix}")
     private String prefix;
+
+    @Qualifier("invoiceRepositoryDatabase")
     @Autowired
     private InvoiceRepositoryInterface invoiceRepositoryMichel;
 
-    public void setInvoiceRepository(InvoiceRepositoryInterface invoiceRepositoryMichel) {
+    public InvoiceServicePrefix(@Qualifier("invoiceRepositoryDatabase") InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }
 

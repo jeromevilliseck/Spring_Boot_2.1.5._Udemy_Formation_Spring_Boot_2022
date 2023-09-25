@@ -32,10 +32,11 @@ public class App {
 
         /*Ici APP ne changera plus
         Meme si ajout d'implementations ultérieures de services, controller, repository
-        APP se charge d'instancier les composants de l'architecture
+        APP se charge d'instancier les composants de l'architecture (inversion de controle)
         APP et les mets en relation grâce à l'injection de dépendances
          */
 
+        //Inversion de controle
         //1 APP Instancie les composants de l'architecture par reflexivité
         try {
             //Reflexivité java : instancier un objet sur la base d'un nom de class donné par l'utilisateur

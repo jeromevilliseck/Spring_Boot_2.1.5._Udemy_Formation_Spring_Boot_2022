@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+    <!--Autowire by name impose que l'id ai une valeur bien précise-->
 
     <!--Comme le controleur contient un attribut invoiceService, detection automatique d'un bean-->
     <bean class="com.udemy.controller.InvoiceControllerDouchette"></bean>

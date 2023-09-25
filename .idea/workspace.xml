@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Autowiring par modification du fichier de configuration et meta-annotation" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Autowiring sur bean service, suppression du setter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1695115638745" duration="502000" />
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
-      <workItem from="1695631275037" duration="11780000" />
+      <workItem from="1695631275037" duration="12125000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -232,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695652277170</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Autowiring sur bean service, suppression du setter">
+      <option name="closed" value="true" />
+      <created>1695652619188</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695652619188</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +276,7 @@
     <MESSAGE value="Utilisation d'un autowire by name global" />
     <MESSAGE value="Utilisation d'un autowire by type global" />
     <MESSAGE value="Autowiring par modification du fichier de configuration et meta-annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autowiring par modification du fichier de configuration et meta-annotation" />
+    <MESSAGE value="Autowiring sur bean service, suppression du setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autowiring sur bean service, suppression du setter" />
   </component>
 </project>

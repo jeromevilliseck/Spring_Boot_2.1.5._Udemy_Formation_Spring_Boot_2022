@@ -2,13 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
 
     <!--Comme le controleur contient un attribut invoiceService, detection automatique d'un bean-->
-    <bean class="com.udemy.controller.InvoiceControllerDouchette" autowire="byName"></bean>
+    <bean class="com.udemy.controller.InvoiceControllerDouchette"></bean>
 
     <!--Comme le service contient une invoiceRepositoryInterface il detecte avec le autowire un bean plus loin avec le prefix invoiceRepository qui correspond-->
-    <bean id="invoiceService" class="com.udemy.service.InvoiceServicePrefix" autowire="byName">
+    <bean id="invoiceService" class="com.udemy.service.InvoiceServicePrefix">
         <property name="lastNumber" value="112"></property>
         <property name="prefix" value="INV_"></property>
     </bean>

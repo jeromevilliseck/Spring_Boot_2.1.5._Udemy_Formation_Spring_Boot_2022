@@ -2,18 +2,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
-    <!--Autowire by name impose que l'id ai une valeur bien précise-->
+    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
+    <!--Detecte automatiquement en byType une implémentation valide d'une interface attribut d'un bean en parcourant les beans-->
 
-    <!--Comme le controleur contient un attribut invoiceService, detection automatique d'un bean-->
+    <!--Comme le controleur contient un attribut invoiceService de type InvoiceServiceInterface, detection automatique d'un bean InvoiceService ne dessous-->
     <bean class="com.udemy.controller.InvoiceControllerDouchette"></bean>
 
-    <!--Comme le service contient une invoiceRepositoryInterface il detecte avec le autowire un bean plus loin avec le prefix invoiceRepository qui correspond-->
-    <bean id="invoiceService" class="com.udemy.service.InvoiceServicePrefix">
+    <!--Comme le service contient une invoiceRepositoryInterface il trouve une implémentation juste après valide-->
+    <bean class="com.udemy.service.InvoiceServicePrefix">
         <property name="lastNumber" value="112"></property>
         <property name="prefix" value="INV_"></property>
     </bean>
 
     <!--Comme le id contient invoiceRepository -> le InvoiceRepositoryInterface de invoiceService est instancié avec-->
-    <bean id="invoiceRepository" class="com.udemy.repository.InvoiceRepositoryDatabase"/>
+    <bean class="com.udemy.repository.InvoiceRepositoryDatabase"/>
 </beans>

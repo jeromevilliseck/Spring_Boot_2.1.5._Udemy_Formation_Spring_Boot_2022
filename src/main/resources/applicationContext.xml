@@ -7,11 +7,10 @@
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--Activation de l'autowiring par annotation @Autowired-->
-
-    <!--le prefix context est defini en haut dans les lignes 3,7,8-->
-    <!--C:\Users\VILLISECK\.m2\repository\org\springframework\spring-context\5.3.30\spring-context-5.3.30.jar!\META-INF\spring.schemas-->
     <context:annotation-config/>
+    <!--Ligne ci dessous fait le lien entre le fichier de propriété et les annotations @Value-->
+    <context:property-placeholder location="classpath:application.properties"/>
+
     <!--Le bean controleur contient un @Autowired sur l'attribut service-->
     <bean class="com.udemy.controller.InvoiceControllerWeb" />
 

@@ -6,7 +6,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan(basePackages = "com.udemy")
+//base package n'est pas obligatoire car spring scanne à partir de l'emplacement de cette classe et des sous packages
+@ComponentScan
 @PropertySource("classpath:application.properties")
 public class App {
     public static void main(String[] args) {

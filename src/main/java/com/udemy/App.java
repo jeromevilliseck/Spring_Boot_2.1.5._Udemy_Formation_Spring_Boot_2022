@@ -1,14 +1,12 @@
 package com.udemy;
 
 import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.service.prefix.InvoiceServicePrefix;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan(basePackages = {"com.udemy.controller.scan", "com.udemy.service.number", "com.udemy.repository.database"})
+@ComponentScan(basePackages = "com.udemy")
 @PropertySource("classpath:application.properties")
 public class App {
     public static void main(String[] args) {

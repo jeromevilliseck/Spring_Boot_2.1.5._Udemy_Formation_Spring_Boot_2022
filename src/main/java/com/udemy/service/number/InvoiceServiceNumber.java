@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     private static long lastNumber=0;
 
-    @Autowired
+    //@Autowired
     private final InvoiceRepositoryInterface invoiceRepository;
 
     public InvoiceServiceNumber(InvoiceRepositoryInterface invoiceRepository) {

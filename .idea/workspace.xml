@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Changement de lancement de l'APP par classe dédiée à la configuration">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/AppConfigPropertySource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,7 @@
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
       <workItem from="1695631275037" duration="16321000" />
-      <workItem from="1695718335005" duration="3144000" />
+      <workItem from="1695718335005" duration="4425000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -309,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695722067119</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Changement de lancement de l'APP par classe dédiée à la configuration">
+      <option name="closed" value="true" />
+      <created>1695722111333</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695722111333</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)">
+      <option name="closed" value="true" />
+      <created>1695722260762</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1695722260762</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +347,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Création des interfaces sur couche repository, service, controller suite à +de2 implémentations" />
     <MESSAGE value="Réalisation d'injections de dépendance classiques dans la classe App principale" />
     <MESSAGE value="Injection de dépendances avec combinatoires repository | service | controleurs" />
     <MESSAGE value="Inversion de controle : ecriture des interfaces" />
@@ -353,6 +371,7 @@
     <MESSAGE value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
     <MESSAGE value="FIX: Suppression des @Qualifier sur les attributs beans" />
     <MESSAGE value="Changement de lancement de l'APP par classe dédiée à la configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement de lancement de l'APP par classe dédiée à la configuration" />
+    <MESSAGE value="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)" />
   </component>
 </project>

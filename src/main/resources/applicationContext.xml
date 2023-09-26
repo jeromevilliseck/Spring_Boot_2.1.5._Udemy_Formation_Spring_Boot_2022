@@ -10,11 +10,15 @@
     <context:annotation-config/>
     <context:property-placeholder location="classpath:application.properties"/>
     <!--Balise permettant d'indiquer à partir d'ou le scan démarre sans cette balise l'appli ne marche pas-->
-    <context:component-scan base-package="com.udemy" />
+
+    <!--Ne jamais scanner, context:component-scan base-package="com.udemy", scanner les packages par couche enfant du projet comme ci dessous-->
+    <context:component-scan base-package="com.udemy.controller.web" />
+    <context:component-scan base-package="com.udemy.repository.database" />
+    <context:component-scan base-package="com.udemy.service.prefix" />
 
     <!--
-    <bean class="com.udemy.controller.InvoiceControllerWeb" />
-    <bean class="com.udemy.service.InvoiceServicePrefix" />
-    <bean class="com.udemy.repository.InvoiceRepositoryDatabase"/>
+    <bean class="com.udemy.controller.web.InvoiceControllerWeb" />
+    <bean class="com.udemy.service.prefix.InvoiceServicePrefix" />
+    <bean class="com.udemy.repository.database.InvoiceRepositoryDatabase"/>
     -->
 </beans>

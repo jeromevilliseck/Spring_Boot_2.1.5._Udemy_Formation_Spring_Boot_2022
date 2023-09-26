@@ -1,0 +1,6 @@
+Eviter les conflits de dépendances au scan des packages :
+- Répartition par package
+- Répartition par librairie
+- Annotation @Primary
+- Autowiring byName
+- @Profile ou @Conditionnal

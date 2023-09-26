@@ -1,29 +1,28 @@
-package com.udemy.controller;
+package com.udemy.controller.scan;
 
+import com.udemy.controller.InvoiceControllerInterface;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import java.util.Scanner;
-
 @Controller
-public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
+public class InvoiceControllerDouchette implements InvoiceControllerInterface {
     @Qualifier("invoiceServiceNumber")
     @Autowired
     private final InvoiceServiceInterface invoiceService;
 
-    public InvoiceControllerKeyboard(@Qualifier("invoiceServiceNumber") InvoiceServiceInterface invoiceService) {
+    public InvoiceControllerDouchette(@Qualifier("invoiceServiceNumber") InvoiceServiceInterface invoiceService) {
         this.invoiceService = invoiceService;
     }
 
+    @Override
     public void createInvoice() {
-        System.out.println( "WHat is customer name" );
-        Scanner sc = new Scanner(System.in);
-        String customerName = sc.nextLine();
+        System.out.println("Usage du scanner");
+        //Entité
         Invoice invoice = new Invoice();
-        invoice.setCustomerName(customerName);
+        invoice.setCustomerName("Virgin Galactic");
         invoiceService.createInvoice(invoice);
     }
 }

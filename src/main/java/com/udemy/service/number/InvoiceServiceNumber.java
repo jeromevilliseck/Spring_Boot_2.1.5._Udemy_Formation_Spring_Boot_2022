@@ -1,7 +1,8 @@
-package com.udemy.service;
+package com.udemy.service.number;
 
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
+import com.udemy.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

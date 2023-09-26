@@ -3,22 +3,22 @@
 - bean class -> le nom de la classe, package entier inclus
 
 Spring -> Inversion de controle : instanciation
-<bean class="com.udemy.service.InvoiceServicePrefix"/>
-<bean class="com.udemy.controller.InvoiceControllerWeb"/>
-<bean class="com.udemy.repository.InvoiceRepositoryDatabase"/>
+<bean class="com.udemy.service.prefix.InvoiceServicePrefix"/>
+<bean class="com.udemy.controller.web.InvoiceControllerWeb"/>
+<bean class="com.udemy.repository.database.InvoiceRepositoryDatabase"/>
 
 Spring -> Injection de dépendance : injection de mon bean repository dans mon bean service par reference
-<bean class="com.udemy.service.InvoiceServicePrefix">
+<bean class="com.udemy.service.prefix.InvoiceServicePrefix">
         <property name="invoiceRepository" ref="invoiceRepositoryReference"/>
 </bean>
-<bean class="com.udemy.controller.InvoiceControllerWeb"/>
-<bean id="invoiceRepositoryReference" class="com.udemy.repository.InvoiceRepositoryDatabase"/>
+<bean class="com.udemy.controller.web.InvoiceControllerWeb"/>
+<bean id="invoiceRepositoryReference" class="com.udemy.repository.database.InvoiceRepositoryDatabase"/>
 
 - l'id d'un balise bean enfant sert à le placer en référence dans un autre bean à travers la balise property et attribut reference du bean parent
 - le name d'un balise property d'un bean identifie explicitement l'attribut "dépendance" de la classe qui représente ce bean
 
 - Présence obligatoire d'un setter
-<bean class="com.udemy.controller.InvoiceControllerWeb">
+<bean class="com.udemy.controller.web.InvoiceControllerWeb">
         <property name="invoiceService" ref="invoiceServiceReference"/>
     </bean>
 --> Il faut dans l'exemple ci-dessus que la classe InvoiceControllerWeb ai son attribut "dependance" invoiceService qui à un setter de défini
@@ -31,7 +31,7 @@ librairies transitives a spring-context comme spring-aop par exemple
 
 - Setter les attributs d'un bean -> ici lastNumber de la classe InvoiceServicePrefix prendra la valeur 112
 - Il y a une conversion automatique de types
-<bean id="invoiceServiceReference" class="com.udemy.service.InvoiceServicePrefix">
+<bean id="invoiceServiceReference" class="com.udemy.service.prefix.InvoiceServicePrefix">
         <property name="invoiceRepository" ref="invoiceRepositoryReference"/>
         <property name="lastNumber" value="112"></property>
         <property name="prefix" value="INV_"></property>

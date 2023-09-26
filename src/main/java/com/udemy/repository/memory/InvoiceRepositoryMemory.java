@@ -1,6 +1,7 @@
-package com.udemy.repository;
+package com.udemy.repository.memory;
 
 import com.udemy.entity.Invoice;
+import com.udemy.repository.InvoiceRepositoryInterface;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

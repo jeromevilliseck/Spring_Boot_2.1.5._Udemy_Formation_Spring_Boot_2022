@@ -1,5 +1,6 @@
-package com.udemy.controller;
+package com.udemy.controller.web;
 
+import com.udemy.controller.InvoiceControllerInterface;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;

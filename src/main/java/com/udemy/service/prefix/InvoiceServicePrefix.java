@@ -15,11 +15,10 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     @Value("${invoice.prefix}")
     private String prefix;
 
-    @Qualifier("invoiceRepositoryDatabase")
     @Autowired
     private final InvoiceRepositoryInterface invoiceRepositoryMichel;
 
-    public InvoiceServicePrefix(@Qualifier("invoiceRepositoryDatabase") InvoiceRepositoryInterface invoiceRepositoryMichel) {
+    public InvoiceServicePrefix(InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }
 

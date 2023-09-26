@@ -13,11 +13,10 @@ import org.springframework.stereotype.Controller;
 //Spring traite ces deux annotations de la même manière
 @Controller
 public class InvoiceControllerWeb implements InvoiceControllerInterface {
-    @Qualifier("invoiceServicePrefix")
     @Autowired
     private final InvoiceServiceInterface service;
 
-    public InvoiceControllerWeb(@Qualifier("invoiceServicePrefix") InvoiceServiceInterface service) {
+    public InvoiceControllerWeb(InvoiceServiceInterface service) {
         this.service = service;
     }
 

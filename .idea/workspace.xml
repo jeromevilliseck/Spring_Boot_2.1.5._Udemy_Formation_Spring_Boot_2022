@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conflitsDependances.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Résolution des conflits de dépendances au scan spring des packages par répartition par package">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +105,7 @@
       <workItem from="1695311582270" duration="3022000" />
       <workItem from="1695451021487" duration="13084000" />
       <workItem from="1695631275037" duration="16321000" />
-      <workItem from="1695718335005" duration="1805000" />
+      <workItem from="1695718335005" duration="2499000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -295,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695657698659</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Résolution des conflits de dépendances au scan spring des packages par répartition par package">
+      <option name="closed" value="true" />
+      <created>1695720869301</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695720869301</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +341,7 @@
     <MESSAGE value="application.properties mise en place + liaison dans l'application context" />
     <MESSAGE value="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository" />
     <MESSAGE value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
+    <MESSAGE value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
   </component>
 </project>

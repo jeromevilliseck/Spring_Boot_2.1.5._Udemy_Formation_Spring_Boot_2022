@@ -11,11 +11,10 @@ import org.springframework.stereotype.Service;
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     private static long lastNumber=0;
 
-    @Qualifier("invoiceRepositoryMemory")
     @Autowired
     private final InvoiceRepositoryInterface invoiceRepository;
 
-    public InvoiceServiceNumber(@Qualifier("invoiceRepositoryMemory") InvoiceRepositoryInterface invoiceRepository) {
+    public InvoiceServiceNumber(InvoiceRepositoryInterface invoiceRepository) {
         this.invoiceRepository = invoiceRepository;
     }
 

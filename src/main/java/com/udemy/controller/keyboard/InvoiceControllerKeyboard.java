@@ -11,11 +11,10 @@ import java.util.Scanner;
 
 @Controller
 public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
-    @Qualifier("invoiceServiceNumber")
     @Autowired
     private final InvoiceServiceInterface invoiceService;
 
-    public InvoiceControllerKeyboard(@Qualifier("invoiceServiceNumber") InvoiceServiceInterface invoiceService) {
+    public InvoiceControllerKeyboard(InvoiceServiceInterface invoiceService) {
         this.invoiceService = invoiceService;
     }
 

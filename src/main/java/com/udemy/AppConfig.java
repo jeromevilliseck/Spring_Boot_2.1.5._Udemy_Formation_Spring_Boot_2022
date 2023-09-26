@@ -7,7 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan(basePackages = {"com.udemy.controller.scan", "com.udemy.service.number", "com.udemy.repository.database"})
-@PropertySource("classpath:application.properties")
-@ImportResource("")
+@ImportResource("classpath:applicationContext.xml")
 public class AppConfig {
 }

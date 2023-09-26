@@ -7,13 +7,8 @@
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config/>
     <context:property-placeholder location="classpath:application.properties"/>
-    <!--Balise permettant d'indiquer à partir d'ou le scan démarre sans cette balise l'appli ne marche pas-->
-
-    <!--Ne jamais scanner, context:component-scan base-package="com.udemy", scanner les packages par couche enfant du projet comme ci dessous-->
     <context:component-scan base-package="com.udemy.controller.scan" />
     <context:component-scan base-package="com.udemy.service.number" />
     <context:component-scan base-package="com.udemy.repository.database" />
-    <!--Il suffit de changer database par memory par exemple pour changer une injection de dépendance-->
 </beans>

@@ -30,12 +30,4 @@
   </dependencies>
 
   <!--La commande mvn spring-boot:run était issue de ce plugin spring boot maven plugin-->
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 </project>

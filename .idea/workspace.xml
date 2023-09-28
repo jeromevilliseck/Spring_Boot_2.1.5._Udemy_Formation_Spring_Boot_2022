@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HerokuInstructions.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Suppression d'un test junit empechant le deploiement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1695902120474" duration="1036000" />
       <workItem from="1695903253709" duration="16000" />
       <workItem from="1695903288955" duration="26000" />
-      <workItem from="1695903327622" duration="690000" />
+      <workItem from="1695903327622" duration="1622000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -397,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695901872550</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Suppression d'un test junit empechant le deploiement">
+      <option name="closed" value="true" />
+      <created>1695904482328</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1695904482328</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -422,7 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété" />
     <MESSAGE value="Changement de controleur par fichier de propriété" />
     <MESSAGE value="Utilisation des injections de valeurs par configuration dans les attributs des beans" />
     <MESSAGE value="Utilisation des injections de valeurs par configuration dans les attributs des beans - correctif" />
@@ -447,7 +454,8 @@
     <MESSAGE value="Mise en place de l'annotation @SpringBootApplication" />
     <MESSAGE value="@SpringBootApplication avec entête SpringBoot" />
     <MESSAGE value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
+    <MESSAGE value="Suppression d'un test junit empechant le deploiement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Suppression d'un test junit empechant le deploiement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

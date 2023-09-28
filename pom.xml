@@ -7,12 +7,13 @@
       <version>3.1.4</version>
   </parent>
 
+  <name>java-udemy-heroku-learn-project</name>
+
   <groupId>com.udemy</groupId>
   <artifactId>core</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>core</name>
   <url>http://maven.apache.org</url>
 
   <properties>

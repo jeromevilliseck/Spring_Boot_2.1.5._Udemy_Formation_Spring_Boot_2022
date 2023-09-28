@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@SpringBootApplication avec entête SpringBoot">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HerokuInstructions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,8 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -110,7 +111,11 @@
       <workItem from="1695451021487" duration="13084000" />
       <workItem from="1695631275037" duration="16321000" />
       <workItem from="1695718335005" duration="12848000" />
-      <workItem from="1695811577591" duration="3471000" />
+      <workItem from="1695811577591" duration="3771000" />
+      <workItem from="1695902120474" duration="1036000" />
+      <workItem from="1695903253709" duration="16000" />
+      <workItem from="1695903288955" duration="26000" />
+      <workItem from="1695903327622" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -384,8 +389,22 @@
       <option name="project" value="LOCAL" />
       <updated>1695737749145</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku">
+      <option name="closed" value="true" />
+      <created>1695901872550</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1695901872550</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="Path" value="C:\ProgramData\chocolatey\bin;C:\Program Files\GraalVM\graalvm-ce-java17-22.3.2\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.4\bin;C:\Users\VILLISECK\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;" />
+      <env key="ComSpec" value="C:\Windows\system32\cmd.exe" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -403,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié" />
     <MESSAGE value="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété" />
     <MESSAGE value="Changement de controleur par fichier de propriété" />
     <MESSAGE value="Utilisation des injections de valeurs par configuration dans les attributs des beans" />
@@ -428,7 +446,8 @@
     <MESSAGE value="Suppression du parametre basePackages" />
     <MESSAGE value="Mise en place de l'annotation @SpringBootApplication" />
     <MESSAGE value="@SpringBootApplication avec entête SpringBoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="@SpringBootApplication avec entête SpringBoot" />
+    <MESSAGE value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,5 +458,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

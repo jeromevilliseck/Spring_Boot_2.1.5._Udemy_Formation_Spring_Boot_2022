@@ -1,0 +1,39 @@
+https://devcenter.heroku.com/
+
+Heroku connection à son compte avec authenticator
+Aller sur son iphone -> Regleages -> mot de passe -> github.com
+un mot de passe renouvelable toutes les 30s va s'afficher
+Au moment de la creation du compte un compte tiers (cela aurait pu etre autre que github) est choisi pour faire liaison avec le compte Heroku
+c'est dans les paramètres de ce compte que sera indiqué le code da validation renouvelable à chaque connexion
+
+Heroku process to connect and deploy app QUICKLY
+- se positionner sur le depot
+- https://devcenter.heroku.com/articles/getting-started-with-java#set-up -> install heroku
+- lancer un cmd en se positionnant dans le dossier du projet java
+> heroku login (se logguer a son compte heroku)
+> heroku create (creer son app)
+- mettre un fichier Procfile à la racine du projet avec la ligne
+    web: java -jar target/java-getting-started-1.0.0-SNAPSHOT.jar
+    -> le fichier pom xml -> <name>java-getting-started</name> -> <version>1.0.0-SNAPSHOT</version> -> comme ça est construit le nom du jar
+- provision a database :
+> heroku addons:create jawsdb-maria:kitefin
+
+
+
+Heroku connect Dbeaver to app database
+- Log in to heroku
+- clic sur l'app
+- onglet ressources
+- Heroku Postgres
+- Settings
+- Database credentials -> view credentials
+-> possibilité de détruire la BDD pour limiter les couts (destroy database)
+
+
+Plugins de database gratuits chez Heroku (preferer maria db pour raisons dans l'url ci dessous)
+https://www.hostinger.fr/tutoriels/mariadb-vs-mysql
+https://elements.heroku.com/addons/jawsdb-maria
+https://elements.heroku.com/addons/jawsdb
+
+les installer en ligne de commande
+heroku addons:create jawsdb-maria:kitefin

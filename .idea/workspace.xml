@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="minor changes">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +120,7 @@
       <workItem from="1695903288955" duration="26000" />
       <workItem from="1695903327622" duration="2866000" />
       <workItem from="1695909032455" duration="429000" />
+      <workItem from="1695909478656" duration="1372000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -464,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695909227584</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target">
+      <option name="closed" value="true" />
+      <created>1695909635448</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1695909635448</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -489,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Utilisation d'un autowire global" />
     <MESSAGE value="Utilisation d'un autowire by name global" />
     <MESSAGE value="Utilisation d'un autowire by type global" />
     <MESSAGE value="Autowiring par modification du fichier de configuration et meta-annotation" />
@@ -514,7 +523,8 @@
     <MESSAGE value="Test déploiement automatique" />
     <MESSAGE value="Integration maven" />
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,6 +6,7 @@ import com.udemy.service.InvoiceServiceInterface;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -26,14 +27,15 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         service.createInvoice(invoice);
     }
 
+    //Spring utilise le request mapping pour trouver l'identifiant de la vue ici invoice-home
+    //spring cherche une page invoice-home dans resources -> templates
+    //L'annotation @ModelAttribute retourne un objet "invoices" aux vues
     @RequestMapping("/invoice-home")
-    public String displayHome(HttpServletRequest request){
+    public @ModelAttribute("invoices") List<Invoice> displayHome(){
         System.out.println("La méthod display home a été invoquée");
 
         //Utilisation de la classe HttpServletRequest en paramètre
         List<Invoice> invoices = service.getInvoiceList();
-        request.setAttribute("invoices", invoices);
-        //Fonctionnement par defaut de Thymeleaf -> retourne la vue index dans le dossier templates
-        return "index";
+        return invoices;
     }
 }

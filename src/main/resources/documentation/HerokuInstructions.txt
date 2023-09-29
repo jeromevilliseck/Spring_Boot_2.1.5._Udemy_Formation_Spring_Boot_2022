@@ -19,7 +19,6 @@ Heroku process to connect and deploy app QUICKLY
 > heroku addons:create jawsdb-maria:kitefin
 
 
-
 Heroku connect Dbeaver to app database
 - Log in to heroku
 - clic sur l'app

@@ -49,3 +49,11 @@ xmlns="http://www.springframework.org/schema/beans"
 xsi:schemaLocation
 -->reference un fichier xsd, qui explique la grammaire de l'espace de nommage, sous entendu les balises que l'on peut utiliser et comment elles fonctionnent
 -->ce fichier se trouve dans la librairie spring beans
+
+
+---ANNOTATION SPRING BOOT
+@Configuration
+@ComponentScan -> si pas de basePackages, scanne tous les packages situé au niveau de la classe APP et en dessous
+@PropertySource -> indique avec classpath l'emplacement des fichiers de propriétés, par defaut spring recherche un fichier application.properties, elle peut etre retirée
+
+@Configuration + @ComponentScan + @PropertySource = @SpringBootApplication

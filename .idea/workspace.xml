@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot">
-      <change afterPath="$PROJECT_DIR$/documentation/applicationWebExplications.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Passage en application spring boot web">
+      <change afterPath="$PROJECT_DIR$/documentation/Common application properties variables.url" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/@Autowired_@Resource_@Inject.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/@Autowired_@Resource_@Inject.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/HerokuInstructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/HerokuInstructions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/applicationContextExplained.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/conflitsDependances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/conflitsDependances.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/type_valorises_pr_conversion_application_context.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/type_valorises_pr_conversion_application_context.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/VILLISECK/Downloads/ml-llm-233.8264.9.zip",
+    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022/documentation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -133,7 +128,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="9191000" />
+      <workItem from="1695968815438" duration="9803000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -511,7 +506,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695974720849</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Passage en application spring boot web">
+      <option name="closed" value="true" />
+      <created>1695979595437</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1695979595437</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -536,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Autowiring sur bean service, suppression du setter" />
     <MESSAGE value="Autowiring @Autowired @Resource @Inject" />
     <MESSAGE value="@Value mise en place" />
     <MESSAGE value="application.properties mise en place + liaison dans l'application context" />
@@ -561,7 +563,8 @@
     <MESSAGE value="changement plugin maven build" />
     <MESSAGE value="Application context explication" />
     <MESSAGE value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
+    <MESSAGE value="Passage en application spring boot web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passage en application spring boot web" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

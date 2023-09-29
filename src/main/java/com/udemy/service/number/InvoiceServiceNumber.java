@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 //@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     private static long lastNumber=0;
@@ -21,5 +23,10 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     public void createInvoice(Invoice invoice){
         invoice.setNumber(String.valueOf(++lastNumber));
         invoiceRepository.create(invoice);
+    }
+
+    @Override
+    public List<Invoice> getInvoiceList() {
+        return invoiceRepository.list();
     }
 }

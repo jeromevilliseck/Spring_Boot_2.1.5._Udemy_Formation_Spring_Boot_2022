@@ -26,6 +26,7 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     @RequestMapping("/invoice-home")
     public String displayHome(){
         System.out.println("La méthod display home a été invoquée");
-        return "";
+        //Fonctionnement par defaut de Thymeleaf -> retourne la vue index dans le dossier templates
+        return "index";
     }
 }

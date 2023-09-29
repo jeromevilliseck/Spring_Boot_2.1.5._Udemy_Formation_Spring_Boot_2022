@@ -15,4 +15,15 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
         invoices.add(invoice);
         System.out.println("DB -> Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
     }
+
+    @Override
+    public List<Invoice> list() {
+        Invoice invoice1 = new Invoice();
+        invoice1.setCustomerName("patick");
+        invoice1.setNumber("1");
+        Invoice invoice2 = new Invoice();
+        invoice2.setCustomerName("patick");
+        invoice2.setNumber("1");
+        return List.of(invoice1,invoice2);
+    }
 }

@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Gestion des ressources statiques sur disque local">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@RequestMapping et ressource statique">
+      <change afterPath="$PROJECT_DIR$/documentation/MomentsClesFormation.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +68,7 @@
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources\templates" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources" />
@@ -132,15 +138,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="13814000" />
-    </task>
-    <task id="LOCAL-00003" summary="Réalisation d'injections de dépendance classiques dans la classe App principale">
-      <option name="closed" value="true" />
-      <created>1695466961444</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1695466961444</updated>
+      <workItem from="1695968815438" duration="16308000" />
     </task>
     <task id="LOCAL-00004" summary="Injection de dépendances avec combinatoires repository | service | controleurs">
       <option name="closed" value="true" />
@@ -526,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695991949755</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="@RequestMapping et ressource statique">
+      <option name="closed" value="true" />
+      <created>1695997680813</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1695997680813</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -551,7 +557,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository" />
     <MESSAGE value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
     <MESSAGE value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
     <MESSAGE value="FIX: Suppression des @Qualifier sur les attributs beans" />
@@ -576,7 +581,8 @@
     <MESSAGE value="Changement de port par default et chemin par defaut" />
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
     <MESSAGE value="Gestion des ressources statiques sur disque local" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gestion des ressources statiques sur disque local" />
+    <MESSAGE value="@RequestMapping et ressource statique" />
+    <option name="LAST_COMMIT_MESSAGE" value="@RequestMapping et ressource statique" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

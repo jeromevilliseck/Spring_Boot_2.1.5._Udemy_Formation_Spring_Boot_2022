@@ -1,0 +1,3 @@
+33. Spring MVC : Affichage de données dans la vue - Le modèle
+> créer un nouveau contrat, afficher une liste issue d'une base de donnée
+> couche Repository, couche service, couche controleur

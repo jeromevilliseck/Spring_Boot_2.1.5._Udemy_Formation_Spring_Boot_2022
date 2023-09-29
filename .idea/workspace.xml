@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives">
-      <change afterPath="$PROJECT_DIR$/documentation/IntelliJ_Set_HotReload_SpringProject.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/IntellijCmd.docx" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Gestion des ressources statiques sur disque local">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,15 +132,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="11859000" />
-    </task>
-    <task id="LOCAL-00002" summary="Création des interfaces sur couche repository, service, controller suite à +de2 implémentations">
-      <option name="closed" value="true" />
-      <created>1695456160997</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1695456160997</updated>
+      <workItem from="1695968815438" duration="13814000" />
     </task>
     <task id="LOCAL-00003" summary="Réalisation d'injections de dépendance classiques dans la classe App principale">
       <option name="closed" value="true" />
@@ -527,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695980430983</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Gestion des ressources statiques sur disque local">
+      <option name="closed" value="true" />
+      <created>1695991949755</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1695991949755</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -552,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="application.properties mise en place + liaison dans l'application context" />
     <MESSAGE value="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository" />
     <MESSAGE value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
     <MESSAGE value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
@@ -577,7 +575,8 @@
     <MESSAGE value="Passage en application spring boot web" />
     <MESSAGE value="Changement de port par default et chemin par defaut" />
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
+    <MESSAGE value="Gestion des ressources statiques sur disque local" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gestion des ressources statiques sur disque local" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

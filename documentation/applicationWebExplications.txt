@@ -1,0 +1,5 @@
+Différence entre application JavaEE et application Spring
+JavaEE
+Tomcat -> application JAVA embarquée dans le tomcat (.war)
+Spring
+Application JAVA (.jar) -> Tomcat Embarqué (plus vmt besoin de .war)

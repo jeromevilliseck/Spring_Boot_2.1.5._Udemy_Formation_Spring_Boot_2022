@@ -22,21 +22,28 @@
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
-  <!--spring-boot-starter encapsule désormais en dépendance transitive -> spring-boot-autoconfigure -> spring-context (pom.xml)-->
   <dependencies>
-    <dependency>
-      <!--Dépendance minimale-->
+    <!--embarqué par spring boot starter web-->
+    <!--<dependency>
+      &lt;!&ndash;Dépendance minimale&ndash;&gt;
+      &lt;!&ndash;spring-boot-starter encapsule désormais en dépendance transitive -> spring-boot-autoconfigure -> spring-context (pom.xml)&ndash;&gt;
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
+    </dependency>-->
+
+    <dependency>
+      <!--RESTful, Spring MVC, Tomcat as the default embedded container-->
+      <!--Aller sous intellij sous l'onglet maven -> nom du projet -> dependencies -> spring-boot-starter-web pour voir que tomcat est présent-->
+      <!--Spring boot starter web à une dépendance transitive vers spring boot starter, on peut donc desactiver spring-boot-starter du en dépendance-->
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
   </dependencies>
 
-  <!--La commande mvn spring-boot:run était issue de ce plugin spring boot maven plugin-->
   <build>
     <plugins>
+      <!--La commande mvn spring-boot:run était issue de ce plugin spring boot maven plugin-->
       <!--Permet a la commande mvn clean install de générer un fat jar embarquant les librairies springpr que l'appli fonctionne au lancement-->
-      BOOT-INF -> classes -> fichiers de proppriétés
-      BOOT-INF -> lib -> toutes les librairies dont a besoin
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>

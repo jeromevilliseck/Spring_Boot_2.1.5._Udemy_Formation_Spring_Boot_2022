@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Application context explication">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot">
+      <change afterPath="$PROJECT_DIR$/documentation/applicationWebExplications.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/@Autowired_@Resource_@Inject.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/@Autowired_@Resource_@Inject.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/HerokuInstructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/HerokuInstructions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/applicationContextExplained.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/conflitsDependances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/conflitsDependances.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/type_valorises_pr_conversion_application_context.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/type_valorises_pr_conversion_application_context.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,28 +41,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/VILLISECK/Downloads/ml-llm-233.8264.9.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/VILLISECK/Downloads/ml-llm-233.8264.9.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources" />
     </key>
@@ -124,7 +133,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="5486000" />
+      <workItem from="1695968815438" duration="9191000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -494,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695971706422</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot">
+      <option name="closed" value="true" />
+      <created>1695974720849</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1695974720849</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -519,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Autowiring par modification du fichier de configuration et meta-annotation" />
     <MESSAGE value="Autowiring sur bean service, suppression du setter" />
     <MESSAGE value="Autowiring @Autowired @Resource @Inject" />
     <MESSAGE value="@Value mise en place" />
@@ -544,7 +560,8 @@
     <MESSAGE value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
     <MESSAGE value="changement plugin maven build" />
     <MESSAGE value="Application context explication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application context explication" />
+    <MESSAGE value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

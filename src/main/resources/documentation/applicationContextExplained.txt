@@ -57,3 +57,19 @@ xsi:schemaLocation
 @PropertySource -> indique avec classpath l'emplacement des fichiers de propriétés, par defaut spring recherche un fichier application.properties, elle peut etre retirée
 
 @Configuration + @ComponentScan + @PropertySource = @SpringBootApplication
+
+---COMPILATION AVEC SPRING BOOT PLUGIN
+1)
+> mvn clean install
+à la racine du projet avec le plugin spring-boot-maven-plugin placé dans le pom.xml (obligatoire)
+
+générera
+BOOT-INF -> classes -> fichiers de proppriétés
+BOOT-INF -> lib -> toutes les librairies dont a besoin
+fera le MANIFEST.MF
+2)
+-> avec la classe à executer celle qui bénéficie du @SpringBootApplication (obligatoire)
+-> mais également les classes faisant partie du classpath
+
+3)
+La classe principale de l'application doit contenir SpringApplication.run()

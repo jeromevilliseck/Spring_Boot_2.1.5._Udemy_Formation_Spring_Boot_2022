@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="changement plugin maven build">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Application context explication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/@Autowired_@Resource_@Inject.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/@Autowired_@Resource_@Inject.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HerokuInstructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/HerokuInstructions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conflitsDependances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/conflitsDependances.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/type_valorises_pr_conversion_application_context.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/type_valorises_pr_conversion_application_context.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/documentation/applicationContextExplained.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +124,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="2550000" />
+      <workItem from="1695968815438" duration="5486000" />
     </task>
     <task id="LOCAL-00001" summary="Finalisation controller 1ere version">
       <option name="closed" value="true" />
@@ -492,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695910990644</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Application context explication">
+      <option name="closed" value="true" />
+      <created>1695971706422</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1695971706422</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -517,7 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Utilisation d'un autowire by type global" />
     <MESSAGE value="Autowiring par modification du fichier de configuration et meta-annotation" />
     <MESSAGE value="Autowiring sur bean service, suppression du setter" />
     <MESSAGE value="Autowiring @Autowired @Resource @Inject" />
@@ -542,7 +543,8 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
     <MESSAGE value="changement plugin maven build" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement plugin maven build" />
+    <MESSAGE value="Application context explication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Application context explication" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

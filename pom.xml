@@ -1,7 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <!--spring-boot-starter-parent encapsule désormais spring-boot-autoconfigure, spring-context (pom.xml)-->
   <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,21 +22,21 @@
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
+  <!--spring-boot-starter encapsule désormais en dépendance transitive -> spring-boot-autoconfigure -> spring-context (pom.xml)-->
   <dependencies>
     <dependency>
+      <!--Dépendance minimale-->
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.11.0</version>
     </dependency>
   </dependencies>
 
   <!--La commande mvn spring-boot:run était issue de ce plugin spring boot maven plugin-->
   <build>
     <plugins>
+      <!--Permet a la commande mvn clean install de générer un fat jar embarquant les librairies springpr que l'appli fonctionne au lancement-->
+      BOOT-INF -> classes -> fichiers de proppriétés
+      BOOT-INF -> lib -> toutes les librairies dont a besoin
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>

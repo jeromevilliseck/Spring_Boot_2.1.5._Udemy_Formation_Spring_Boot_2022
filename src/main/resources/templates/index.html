@@ -8,8 +8,14 @@
 <h1>Bienvenue dans la page de gestion des factures</h1>
 <h2>Actions disponibles : </h2>
 <ul>
-    <li><a ref="">Ajout de facture</a></li>
+    <li><a>Ajout de facture</a></li>
 </ul>
+<table style="border: 1px solid black">
+    <tr th:each="invoice: ${invoices}">
+        <td th:text="${invoice.number}"></td>
+        <td th:text="${invoice.customerName}"></td>
+    </tr>
+</table>
 <span th:text="${#locale.country}"></span>
 </body>
 </html>

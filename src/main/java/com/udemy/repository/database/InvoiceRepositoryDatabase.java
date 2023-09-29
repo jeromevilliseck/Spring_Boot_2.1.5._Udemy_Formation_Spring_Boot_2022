@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
-    private static List<Invoice> invoices = new ArrayList<>();
+    private final static List<Invoice> invoices = new ArrayList<>();
 
     public void create(Invoice invoice){
         invoices.add(invoice);
@@ -22,8 +22,8 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
         invoice1.setCustomerName("patick");
         invoice1.setNumber("1");
         Invoice invoice2 = new Invoice();
-        invoice2.setCustomerName("patick");
-        invoice2.setNumber("1");
+        invoice2.setCustomerName("EDF");
+        invoice2.setNumber("2");
         return List.of(invoice1,invoice2);
     }
 }

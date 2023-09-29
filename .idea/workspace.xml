@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@RequestMapping et ressource statique">
-      <change afterPath="$PROJECT_DIR$/documentation/MomentsClesFormation.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Affichage d'une liste à la vue : modification couche controleur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,23 +133,7 @@
       <workItem from="1695909032455" duration="429000" />
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
-      <workItem from="1695968815438" duration="16308000" />
-    </task>
-    <task id="LOCAL-00004" summary="Injection de dépendances avec combinatoires repository | service | controleurs">
-      <option name="closed" value="true" />
-      <created>1695474665988</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1695474665988</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Inversion de controle : ecriture des interfaces">
-      <option name="closed" value="true" />
-      <created>1695478747759</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1695478747759</updated>
+      <workItem from="1695968815438" duration="17681000" />
     </task>
     <task id="LOCAL-00006" summary="Inversion de controle : injections de dependances faites dans le App">
       <option name="closed" value="true" />
@@ -532,7 +511,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695997680813</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Affichage d'une liste à la vue : modification couche repository">
+      <option name="closed" value="true" />
+      <created>1696000130615</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1696000130616</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Affichage d'une liste à la vue : modification couche controleur">
+      <option name="closed" value="true" />
+      <created>1696000344149</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1696000344150</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -557,8 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable" />
-    <MESSAGE value="Résolution des conflits de dépendances au scan spring des packages par répartition par package" />
     <MESSAGE value="FIX: Suppression des @Qualifier sur les attributs beans" />
     <MESSAGE value="Changement de lancement de l'APP par classe dédiée à la configuration" />
     <MESSAGE value="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)" />
@@ -582,7 +575,9 @@
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
     <MESSAGE value="Gestion des ressources statiques sur disque local" />
     <MESSAGE value="@RequestMapping et ressource statique" />
-    <option name="LAST_COMMIT_MESSAGE" value="@RequestMapping et ressource statique" />
+    <MESSAGE value="Affichage d'une liste à la vue : modification couche repository" />
+    <MESSAGE value="Affichage d'une liste à la vue : modification couche controleur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Affichage d'une liste à la vue : modification couche controleur" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

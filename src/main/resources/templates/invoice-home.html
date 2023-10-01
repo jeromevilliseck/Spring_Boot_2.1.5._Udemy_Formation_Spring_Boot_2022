@@ -12,7 +12,10 @@
 </ul>
 <table style="border: 1px solid black">
     <tr th:each="invoice: ${invoices}">
-        <td th:text="${invoice.number}"></td>
+        <td>
+            <!--Convention des urls en thymeleaf -> @{ENTITE_CIBLEE}/variable_durl<-variable model-->
+            <a th:ref="@{/invoice/{number}(number=${invoice.number})}" th:text="${invoice.number}" />
+        </td>
         <td th:text="${invoice.customerName}"></td>
     </tr>
 </table>

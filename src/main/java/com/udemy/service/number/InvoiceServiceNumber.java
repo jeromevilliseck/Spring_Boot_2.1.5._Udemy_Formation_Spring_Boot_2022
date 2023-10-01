@@ -3,9 +3,6 @@ package com.udemy.service.number;
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 import com.udemy.service.InvoiceServiceInterface;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -28,5 +25,10 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     @Override
     public List<Invoice> getInvoiceList() {
         return invoiceRepository.list();
+    }
+
+    @Override
+    public Invoice getInvoiceByNumber(String number) {
+        return invoiceRepository.getInvoiceById(number);
     }
 }

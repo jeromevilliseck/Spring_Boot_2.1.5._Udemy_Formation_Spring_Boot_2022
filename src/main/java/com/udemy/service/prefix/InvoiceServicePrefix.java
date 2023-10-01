@@ -33,4 +33,9 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     public List<Invoice> getInvoiceList() {
         return invoiceRepositoryMichel.list();
     }
+
+    @Override
+    public Invoice getInvoiceByNumber(String number) {
+        return null;
+    }
 }

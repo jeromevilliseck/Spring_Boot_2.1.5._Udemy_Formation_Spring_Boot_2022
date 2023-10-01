@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+//On va avoir des url pour un controleur Invoice qui commencent systématiquement par /invoice
 @Controller
+@RequestMapping("/invoice")
 public class InvoiceControllerWeb implements InvoiceControllerInterface {
     @Autowired
     private final InvoiceServiceInterface service;
@@ -31,9 +33,9 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     //Spring utilise le request mapping pour trouver l'identifiant de la vue ici invoice-home
     //spring cherche une page invoice-home dans resources -> templates
     //L'annotation @ModelAttribute retourne un objet "invoices" aux vues
-    @RequestMapping("/invoice-home")
+    @RequestMapping("/home")
     public @ModelAttribute("invoices") List<Invoice> displayHome(){
-        System.out.println("La méthod display home a été invoquée");
+        System.out.println("La méthod displayHome a été invoquée");
 
         //Utilisation de la classe HttpServletRequest en paramètre
         List<Invoice> invoices = service.getInvoiceList();
@@ -41,10 +43,10 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     }
 
     //{id} <-mapping-> @PathVariable("id") String number
-    @RequestMapping("/invoice/{id}")
-    public @ModelAttribute("/invoice/{id}") Invoice displayInvoice(@PathVariable("id") String number){
+    @RequestMapping("/{id}")
+    public @ModelAttribute("invoice") Invoice displayInvoice(@PathVariable("id") String number){
         System.out.println("La méthod displayInvoice a été invoquée");
 
-        return null;
+        return service.getInvoiceByNumber(number);
     }
 }

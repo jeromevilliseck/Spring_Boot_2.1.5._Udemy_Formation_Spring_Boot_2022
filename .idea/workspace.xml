@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Minor change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Controller : Mise en place d'un route globale au controller + Thymeleaf adaptation de l'url en conséquence">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,22 +128,7 @@
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
-    </task>
-    <task id="LOCAL-00008" summary="Creation de l'application context pour faire l'inversion de controle avec explications dans fichier dédié">
-      <option name="closed" value="true" />
-      <created>1695635082849</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1695635082849</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Réecriture de la classe principale, reflexivité par fichier de propriété, injection de dépendance dans fichier de propriété">
-      <option name="closed" value="true" />
-      <created>1695635846375</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1695635846375</updated>
+      <workItem from="1696167404860" duration="3119000" />
     </task>
     <task id="LOCAL-00010" summary="Changement de controleur par fichier de propriété">
       <option name="closed" value="true" />
@@ -515,7 +506,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696002346897</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Thymeleaf : insertion url dans la vue pour accéder à une facture, convention de l'url en thymeleaf expliquée">
+      <option name="closed" value="true" />
+      <created>1696167466913</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1696167466914</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Controller : Mise en place d'une requete d'accès à une unité d'entité">
+      <option name="closed" value="true" />
+      <created>1696167591965</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1696167591965</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -540,8 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)" />
-    <MESSAGE value="Placement de la configuration dans la classe App principale" />
     <MESSAGE value="Conservation annotée d'un seul repository, service, controleur" />
     <MESSAGE value="Suppression du parametre basePackages" />
     <MESSAGE value="Mise en place de l'annotation @SpringBootApplication" />
@@ -565,7 +570,9 @@
     <MESSAGE value="Affichage d'une liste à la vue : modification couche controleur" />
     <MESSAGE value="Thymeleaf : utilisation dans le controleur de l'objet HttpServletRequest pour transmettre des données aux vues" />
     <MESSAGE value="Minor change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor change" />
+    <MESSAGE value="Thymeleaf : insertion url dans la vue pour accéder à une facture, convention de l'url en thymeleaf expliquée" />
+    <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

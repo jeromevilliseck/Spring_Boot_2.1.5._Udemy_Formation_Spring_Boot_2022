@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +121,7 @@
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
-      <workItem from="1696167404860" duration="4370000" />
-    </task>
-    <task id="LOCAL-00011" summary="Utilisation des injections de valeurs par configuration dans les attributs des beans">
-      <option name="closed" value="true" />
-      <created>1695646292262</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1695646292262</updated>
+      <workItem from="1696167404860" duration="4681000" />
     </task>
     <task id="LOCAL-00012" summary="Utilisation des injections de valeurs par configuration dans les attributs des beans - correctif">
       <option name="closed" value="true" />
@@ -519,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696175972095</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues">
+      <option name="closed" value="true" />
+      <created>1696177217873</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1696177217873</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -544,7 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Suppression du parametre basePackages" />
     <MESSAGE value="Mise en place de l'annotation @SpringBootApplication" />
     <MESSAGE value="@SpringBootApplication avec entête SpringBoot" />
     <MESSAGE value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
@@ -569,7 +564,8 @@
     <MESSAGE value="Thymeleaf : insertion url dans la vue pour accéder à une facture, convention de l'url en thymeleaf expliquée" />
     <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
     <MESSAGE value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
+    <MESSAGE value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
+    <option name="LAST_COMMIT_MESSAGE" value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

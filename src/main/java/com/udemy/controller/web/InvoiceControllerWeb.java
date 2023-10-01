@@ -5,6 +5,7 @@ import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -31,19 +32,17 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     //spring cherche une page invoice-home dans resources -> templates
     //L'annotation @ModelAttribute retourne un objet "invoices" aux vues
     @RequestMapping("/home")
-    public ModelAndView displayHome(){
+    public String displayHome(Model model){
         System.out.println("La méthod displayHome a été invoquée");
-        ModelAndView mv = new ModelAndView("invoice-home");
-        mv.addObject("invoices", service.getInvoiceList());
-        return mv;
+        model.addAttribute("invoices", service.getInvoiceList());
+        return "invoice-home";
     }
 
     //{id} <-mapping-> @PathVariable("id") String number
     @RequestMapping("/{id}")
-    public ModelAndView displayInvoice(@PathVariable("id") String number){
+    public String displayInvoice(@PathVariable("id") String number, Model model){
         System.out.println("La méthod displayInvoice a été invoquée");
-        ModelAndView mv = new ModelAndView("invoice-details");
-        mv.addObject("invoice", service.getInvoiceByNumber(number));
-        return mv;
+        model.addAttribute("invoice", service.getInvoiceByNumber(number));
+        return "invoice-details";
     }
 }

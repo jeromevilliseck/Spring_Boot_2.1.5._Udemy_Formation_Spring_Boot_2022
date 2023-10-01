@@ -3,14 +3,11 @@ package com.udemy.controller.web;
 import com.udemy.controller.InvoiceControllerInterface;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
+import org.springframework.web.servlet.ModelAndView;
 
 //On va avoir des url pour un controleur Invoice qui commencent systématiquement par /invoice
 @Controller
@@ -34,19 +31,19 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     //spring cherche une page invoice-home dans resources -> templates
     //L'annotation @ModelAttribute retourne un objet "invoices" aux vues
     @RequestMapping("/home")
-    public @ModelAttribute("invoices") List<Invoice> displayHome(){
+    public ModelAndView displayHome(){
         System.out.println("La méthod displayHome a été invoquée");
-
-        //Utilisation de la classe HttpServletRequest en paramètre
-        List<Invoice> invoices = service.getInvoiceList();
-        return invoices;
+        ModelAndView mv = new ModelAndView("invoice-home");
+        mv.addObject("invoices", service.getInvoiceList());
+        return mv;
     }
 
     //{id} <-mapping-> @PathVariable("id") String number
     @RequestMapping("/{id}")
-    public @ModelAttribute("invoice") Invoice displayInvoice(@PathVariable("id") String number){
+    public ModelAndView displayInvoice(@PathVariable("id") String number){
         System.out.println("La méthod displayInvoice a été invoquée");
-
-        return service.getInvoiceByNumber(number);
+        ModelAndView mv = new ModelAndView("invoice-details");
+        mv.addObject("invoice", service.getInvoiceByNumber(number));
+        return mv;
     }
 }

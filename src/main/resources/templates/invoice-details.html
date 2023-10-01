@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details de la facture</title>
+</head>
+<body>
+<h1>Bienvenue dans la page de gestion des factures</h1>
+<h2>Actions disponibles : </h2>
+<ul>
+    <li><a>Ajout de facture</a></li>
+</ul>
+<p>
+    number : <span th:text="${invoice.number}"></span>
+</p>
+<p>
+    customer : <span th:text="${invoice.customerName}"></span>
+</p>
+<p>
+    orderNumber : <span th:text="${invoice.orderNumber}"></span>
+</p>
+<span th:text="${#locale.country}"></span>
+</body>
+</html>

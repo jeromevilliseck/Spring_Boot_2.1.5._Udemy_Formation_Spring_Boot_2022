@@ -36,6 +36,6 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     @Override
     public Invoice getInvoiceByNumber(String number) {
-        return null;
+        return invoiceRepositoryMichel.getInvoiceById(number);
     }
 }

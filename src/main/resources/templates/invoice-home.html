@@ -14,7 +14,7 @@
     <tr th:each="invoice: ${invoices}">
         <td>
             <!--Convention des urls en thymeleaf -> @{ENTITE_CIBLEE}/variable_model-->
-            <a th:ref="${invoice.number}" th:text="${invoice.number}" />
+            <a th:href="${invoice.number}" th:text="${invoice.number}"></a>
         </td>
         <td th:text="${invoice.customerName}"></td>
     </tr>

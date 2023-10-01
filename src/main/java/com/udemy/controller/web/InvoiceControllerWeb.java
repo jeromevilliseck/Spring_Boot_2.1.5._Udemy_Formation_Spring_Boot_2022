@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -37,5 +38,13 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         //Utilisation de la classe HttpServletRequest en paramètre
         List<Invoice> invoices = service.getInvoiceList();
         return invoices;
+    }
+
+    //{id} <-mapping-> @PathVariable("id") String number
+    @RequestMapping("/invoice/{id}")
+    public @ModelAttribute("/invoice/{id}") Invoice displayInvoice(@PathVariable("id") String number){
+        System.out.println("La méthod displayInvoice a été invoquée");
+
+        return null;
     }
 }

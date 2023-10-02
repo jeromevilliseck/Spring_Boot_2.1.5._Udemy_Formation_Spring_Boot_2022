@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 //On va avoir des url pour un controleur Invoice qui commencent systématiquement par /invoice
@@ -21,6 +22,7 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         this.service = service;
     }
 
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public void createInvoice() {
         String customerName = "Tesla";
         Invoice invoice = new Invoice();
@@ -44,5 +46,10 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         System.out.println("La méthod displayInvoice a été invoquée");
         model.addAttribute("invoice", service.getInvoiceByNumber(number));
         return "invoice-details";
+    }
+
+    @RequestMapping("/create-form")
+    public String displayInvoiceCreateForm(){
+        return "invoice-create-form";
     }
 }

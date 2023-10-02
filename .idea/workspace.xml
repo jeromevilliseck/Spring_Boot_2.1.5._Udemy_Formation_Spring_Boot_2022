@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/src/main/resources/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/src/main/resources/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\templates" />
@@ -121,15 +124,8 @@
       <workItem from="1695909478656" duration="2549000" />
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
-      <workItem from="1696167404860" duration="4681000" />
-    </task>
-    <task id="LOCAL-00012" summary="Utilisation des injections de valeurs par configuration dans les attributs des beans - correctif">
-      <option name="closed" value="true" />
-      <created>1695646421004</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1695646421004</updated>
+      <workItem from="1696167404860" duration="5148000" />
+      <workItem from="1696234557202" duration="609000" />
     </task>
     <task id="LOCAL-00013" summary="Utilisation des autowire pour injecter autocmatiquement les beans par nom">
       <option name="closed" value="true" />
@@ -515,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696177217873</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)">
+      <option name="closed" value="true" />
+      <created>1696177789134</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1696177789134</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -540,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Mise en place de l'annotation @SpringBootApplication" />
     <MESSAGE value="@SpringBootApplication avec entête SpringBoot" />
     <MESSAGE value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
     <MESSAGE value="Suppression d'un test junit empechant le deploiement" />
@@ -565,7 +568,8 @@
     <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
     <MESSAGE value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
     <MESSAGE value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
-    <option name="LAST_COMMIT_MESSAGE" value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
+    <MESSAGE value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,9 +6,7 @@ import com.udemy.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 //On va avoir des url pour un controleur Invoice qui commencent systématiquement par /invoice
@@ -22,18 +20,17 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
         this.service = service;
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public void createInvoice() {
-        String customerName = "Tesla";
-        Invoice invoice = new Invoice();
-        invoice.setCustomerName(customerName);
+    //Avec @ModelAttribute Spring va instancier un objet invoice et le fournir en entrée
+    @PostMapping( "")
+    public String createInvoice(@ModelAttribute Invoice invoice) {
         service.createInvoice(invoice);
+        return "invoice-created";
     }
 
     //Spring utilise le request mapping pour trouver l'identifiant de la vue ici invoice-home
     //spring cherche une page invoice-home dans resources -> templates
     //L'annotation @ModelAttribute retourne un objet "invoices" aux vues
-    @RequestMapping("/home")
+    @GetMapping("/home")
     public String displayHome(Model model){
         System.out.println("La méthod displayHome a été invoquée");
         model.addAttribute("invoices", service.getInvoiceList());
@@ -41,15 +38,15 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface {
     }
 
     //{id} <-mapping-> @PathVariable("id") String number
-    @RequestMapping("/{id}")
+    @GetMapping("/{id}")
     public String displayInvoice(@PathVariable("id") String number, Model model){
         System.out.println("La méthod displayInvoice a été invoquée");
         model.addAttribute("invoice", service.getInvoiceByNumber(number));
         return "invoice-details";
     }
 
-    @RequestMapping("/create-form")
-    public String displayInvoiceCreateForm(){
+    @GetMapping("/create-form")
+    public String displayInvoiceCreateForm(@ModelAttribute Invoice invoice){
         return "invoice-create-form";
     }
 }

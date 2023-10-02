@@ -1,6 +1,8 @@
 package com.udemy.controller;
 
+import com.udemy.entity.Invoice;
+
 public interface InvoiceControllerInterface {
-    void createInvoice();
+    String createInvoice(Invoice invoice);
 
 }

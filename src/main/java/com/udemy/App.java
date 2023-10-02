@@ -11,6 +11,5 @@ public class App {
         //L'application context sert pour faire des programmes console ou shell qui s'arrêtent après une exécution
         ApplicationContext context = SpringApplication.run(App.class, args);
         InvoiceControllerInterface invoiceControllerInterface = context.getBean(InvoiceControllerInterface.class);
-        invoiceControllerInterface.createInvoice();
     }
 }

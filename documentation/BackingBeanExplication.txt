@@ -1,0 +1,24 @@
+Le backing bean consiste à :
+- créer une classe qui dispose d'autant de propriétés que de champs de formulaire
+- spring va instancier cette classe après l'envoi du formumlaire par l'utilisateur et y mettre les informations
+
+ //Avec @ModelAttribute Spring va instancier un objet invoice et le fournir en entrée
+    @PostMapping("")
+    public String createInvoice(@ModelAttribute("form") Invoice invoice) { -> l'objet invoice est rempli a partir des fields du formulaire
+        service.createInvoice(invoice);
+        return "invoice-created";
+    }
+
+-> @ModelAttribute fait un lien avec ceci ci dessous qui à été envoyé juste avant
+
+<form th:action="@{/invoice}" method="POST" th:object="${form}">
+    <p>Customer name<input type="text" th:field="*{customerName}"></p> -> les champs peuvent etre trouvé dans l'entité Invoice
+    <p>Order number<input type="text" th:field="*{orderNumber}"></p>
+    <input type="submit" value="OK" />
+</form>
+
+On peut aussi le faire de cette façon
+
+public String createInvoice(@ModelAttribute Invoice invoice) {}   //CONTROLER
+et
+<form th:action="@{/invoice}" method="POST" th:object="${invoice}">    //CLASSE

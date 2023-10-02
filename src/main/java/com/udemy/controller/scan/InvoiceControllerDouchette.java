@@ -14,11 +14,12 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface {
     }
 
     @Override
-    public void createInvoice() {
+    public String createInvoice(Invoice invoice) {
         System.out.println("Usage du scanner");
         //Entité
-        Invoice invoice = new Invoice();
+        invoice = new Invoice();
         invoice.setCustomerName("Virgin Galactic");
         invoiceService.createInvoice(invoice);
+        return null;
     }
 }

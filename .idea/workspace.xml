@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version">
+      <change afterPath="$PROJECT_DIR$/documentation/BackingBeanExplication.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/BackingBeanNotion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-created.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +131,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="609000" />
-    </task>
-    <task id="LOCAL-00013" summary="Utilisation des autowire pour injecter autocmatiquement les beans par nom">
-      <option name="closed" value="true" />
-      <created>1695647943044</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1695647943044</updated>
+      <workItem from="1696234557202" duration="5605000" />
     </task>
     <task id="LOCAL-00014" summary="Utilisation d'un autowire global">
       <option name="closed" value="true" />
@@ -519,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696177789134</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version">
+      <option name="closed" value="true" />
+      <created>1696235584680</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1696235584681</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -544,8 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="@SpringBootApplication avec entête SpringBoot" />
-    <MESSAGE value="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku" />
     <MESSAGE value="Suppression d'un test junit empechant le deploiement" />
     <MESSAGE value="Correction pom.xml, installation procfile" />
     <MESSAGE value="Test déploiement automatique" />
@@ -569,7 +573,9 @@
     <MESSAGE value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
     <MESSAGE value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
     <MESSAGE value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
+    <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue" />
+    <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,14 @@
+39. Rappels : Web Services REST
+
+/voiture        GET     Liste des voitures
+/voiture/12     GET     Retourne une voiture
+/voiture        POST    Ajouter une voiture
+/voiture/12     PUT     Modifier une voiture
+/voiture/12     DELETE  Supprimer une voiture
+
+Formats pivots :
+-XML
+-JSON
+-MessagePack
+-Hessian
+-Burlap

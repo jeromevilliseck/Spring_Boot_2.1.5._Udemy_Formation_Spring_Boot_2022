@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@Valid - ajout de la gestion des erreurs">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@Valid - gestion des erreurs - routage sur page en cours si erreur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +124,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="9634000" />
-    </task>
-    <task id="LOCAL-00016" summary="Utilisation d'un autowire by type global">
-      <option name="closed" value="true" />
-      <created>1695648287801</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1695648287801</updated>
+      <workItem from="1696234557202" duration="11350000" />
     </task>
     <task id="LOCAL-00017" summary="Autowiring par modification du fichier de configuration et meta-annotation">
       <option name="closed" value="true" />
@@ -519,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696335122858</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="@Valid - gestion des erreurs - routage sur page en cours si erreur">
+      <option name="closed" value="true" />
+      <created>1696336695036</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1696336695036</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -544,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Test déploiement automatique" />
     <MESSAGE value="Integration maven" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
@@ -569,7 +567,8 @@
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
     <MESSAGE value="Finalisation envoi de données via formulaire vue + controller" />
     <MESSAGE value="@Valid - ajout de la gestion des erreurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Valid - ajout de la gestion des erreurs" />
+    <MESSAGE value="@Valid - gestion des erreurs - routage sur page en cours si erreur" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Valid - gestion des erreurs - routage sur page en cours si erreur" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

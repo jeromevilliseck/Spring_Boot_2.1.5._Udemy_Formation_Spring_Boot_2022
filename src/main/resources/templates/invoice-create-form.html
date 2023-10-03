@@ -8,8 +8,18 @@
 <!--invoiceForm = nom de la classe, première lettre en minuscule-->
 <form th:action="@{/invoice}" method="POST" th:object="${invoiceForm}">
     <p>Customer name<input type="text" th:field="*{customerName}"></p>
+    <div th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></div>
     <p>Order number<input type="text" th:field="*{orderNumber}"></p>
+    <div th:if="${#fields.hasErrors('orderNumber')}" th:errors="*{orderNumber}"></div>
     <input type="submit" value="OK" />
 </form>
 </body>
 </html>
+<!--${} = ref à un objet stockée en mémoire, scope request ou session
+@{} = construire des url
+*{} = ref a un objet local précisé vie th:object
+#{} = OGNL entre parentheses
+Thymeleaf avec spring -> type expression passe de OGNL a SpEL
+# fait référence à un contexte d'execution
+donc #fields -> fait référence à l'objet BindingResult dans invoiceControlerWeb
+-->

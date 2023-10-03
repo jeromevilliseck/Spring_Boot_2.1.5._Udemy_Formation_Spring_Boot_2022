@@ -5,10 +5,10 @@ import jakarta.validation.constraints.Size;
 
 public class InvoiceForm {
     private String number;
-    @NotBlank
+    @NotBlank(message = "nom obligatoire")
     private String customerName;
     //Utiliser @Pattern(regexp = "") pour respecter un format
-    @Size(min=10,max=13)
+    @Size(min=10,max=13, message = "n de commande entre 10 et f13 elements")
     private String orderNumber;
 
     public String getNumber() {

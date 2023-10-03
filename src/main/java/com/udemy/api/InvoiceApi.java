@@ -29,7 +29,7 @@ public class InvoiceApi {
         return service.getInvoiceByNumber(number);
     }
 
-    @GetMapping("/create")
+    @PostMapping("/create")
     @ResponseBody //RequestBody va transformer du JSON ou autre en Objet Entité correspondant
     public Invoice post(@RequestBody Invoice invoice){
         return service.createInvoice(invoice);

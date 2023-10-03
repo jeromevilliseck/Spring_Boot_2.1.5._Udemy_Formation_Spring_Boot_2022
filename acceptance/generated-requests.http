@@ -1,0 +1,19 @@
+###
+GET http://localhost:80/invoise/invoice
+
+<> 2023-10-03T181107.200.json
+<> 2023-10-03T181057.404.json
+
+###
+POST http://localhost:80/invoise/invoice/create
+Content-Type: application/json
+
+{
+  "number": 999,
+  "customerName": "maria",
+  "orderNumber": "DB"
+}
+
+<> 2023-10-03T181614.200.json
+<> 2023-10-03T181510.200.html
+<> 2023-10-03T181453.405.json

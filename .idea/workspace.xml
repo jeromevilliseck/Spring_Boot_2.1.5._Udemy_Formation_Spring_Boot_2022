@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="REST - Introduction">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@RestController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -78,7 +80,7 @@
       <recent name="com.udemy.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.udemy.App" />
       <module name="core" />
@@ -92,6 +94,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="post-requests | Send a form with the text and file fields" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" index="3" requestIdentifier="Send a form with the text and file fields" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.udemy.App" />
@@ -101,7 +112,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="Application.App" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.post-requests | Send a form with the text and file fields" />
       </list>
     </recent_temporary>
   </component>
@@ -128,23 +142,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="14092000" />
-    </task>
-    <task id="LOCAL-00020" summary="@Value mise en place">
-      <option name="closed" value="true" />
-      <created>1695653256068</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1695653256068</updated>
-    </task>
-    <task id="LOCAL-00021" summary="application.properties mise en place + liaison dans l'application context">
-      <option name="closed" value="true" />
-      <created>1695653854240</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1695653854240</updated>
+      <workItem from="1696234557202" duration="14713000" />
     </task>
     <task id="LOCAL-00022" summary="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository">
       <option name="closed" value="true" />
@@ -522,7 +520,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696347767602</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="@RestController et @RequestBody">
+      <option name="closed" value="true" />
+      <created>1696349197369</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1696349197369</updated>
+    </task>
+    <task id="LOCAL-00070" summary="@RestController">
+      <option name="closed" value="true" />
+      <created>1696349241675</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1696349241675</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -547,9 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="changement plugin maven build" />
-    <MESSAGE value="Application context explication" />
-    <MESSAGE value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
     <MESSAGE value="Passage en application spring boot web" />
     <MESSAGE value="Changement de port par default et chemin par defaut" />
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
@@ -572,7 +583,10 @@
     <MESSAGE value="@Valid - Affichage de messages personnalisés d'erreurs sur les champs utilisateur" />
     <MESSAGE value="@Valid - Internationalisation des messages d'erreur depuis la librairie hibernate validation et personnalisation" />
     <MESSAGE value="REST - Introduction" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST - Introduction" />
+    <MESSAGE value="@RestController et @ RequestBody" />
+    <MESSAGE value="@RestController et @RequestBody" />
+    <MESSAGE value="@RestController" />
+    <option name="LAST_COMMIT_MESSAGE" value="@RestController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

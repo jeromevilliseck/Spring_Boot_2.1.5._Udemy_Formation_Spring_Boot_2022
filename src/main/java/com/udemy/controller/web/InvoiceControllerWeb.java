@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -22,14 +23,18 @@ public class InvoiceControllerWeb {
         this.service = service;
     }
 
-    //Ajout de règles de validation
+    //Tjrs placer l'objet BindingResult après le dernier model attribute
     @PostMapping( "")
-    public String createInvoice(@Valid @ModelAttribute InvoiceForm invoiceForm) {
-        //Conversion InvoiceForm vers Invoice pour les besoins du service
+    public String createInvoice(@Valid @ModelAttribute InvoiceForm invoiceForm, BindingResult results) {
+        if (results.hasErrors()){
+            //Permet de rester sur le formulaire en cas d'erreurs sur la page, règles en lien avec @Valid dans InvoiceForm
+            return "invoice-create-form";
+        }
         Invoice invoice = new Invoice();
         invoice.setCustomerName(invoiceForm.getCustomerName());
         invoice.setOrderNumber(invoiceForm.getOrderNumber());
         service.createInvoice(invoice);
+
         return "invoice-created";
     }
 

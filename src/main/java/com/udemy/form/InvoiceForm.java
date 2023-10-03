@@ -7,6 +7,7 @@ public class InvoiceForm {
     private String number;
     @NotBlank
     private String customerName;
+    //Utiliser @Pattern(regexp = "") pour respecter un format
     @Size(min=10,max=13)
     private String orderNumber;
 

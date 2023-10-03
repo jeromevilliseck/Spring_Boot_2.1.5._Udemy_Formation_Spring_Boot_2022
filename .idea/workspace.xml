@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Finalisation envoi de données via formulaire vue + controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@Valid - ajout de la gestion des erreurs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +125,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="7777000" />
-    </task>
-    <task id="LOCAL-00015" summary="Utilisation d'un autowire by name global">
-      <option name="closed" value="true" />
-      <created>1695648131725</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1695648131725</updated>
+      <workItem from="1696234557202" duration="9634000" />
     </task>
     <task id="LOCAL-00016" summary="Utilisation d'un autowire by type global">
       <option name="closed" value="true" />
@@ -519,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696258740732</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="@Valid - ajout de la gestion des erreurs">
+      <option name="closed" value="true" />
+      <created>1696335122857</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1696335122858</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -544,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Correction pom.xml, installation procfile" />
     <MESSAGE value="Test déploiement automatique" />
     <MESSAGE value="Integration maven" />
     <MESSAGE value="minor changes" />
@@ -569,7 +568,8 @@
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
     <MESSAGE value="Finalisation envoi de données via formulaire vue + controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalisation envoi de données via formulaire vue + controller" />
+    <MESSAGE value="@Valid - ajout de la gestion des erreurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Valid - ajout de la gestion des erreurs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

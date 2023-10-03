@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version">
-      <change afterPath="$PROJECT_DIR$/documentation/BackingBeanExplication.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/BackingBeanNotion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-created.html" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Finalisation envoi de données via formulaire vue + controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/InvoiceControllerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -131,15 +125,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="5605000" />
-    </task>
-    <task id="LOCAL-00014" summary="Utilisation d'un autowire global">
-      <option name="closed" value="true" />
-      <created>1695647984790</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1695647984790</updated>
+      <workItem from="1696234557202" duration="7777000" />
     </task>
     <task id="LOCAL-00015" summary="Utilisation d'un autowire by name global">
       <option name="closed" value="true" />
@@ -525,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696235584681</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Finalisation envoi de données via formulaire vue + controller">
+      <option name="closed" value="true" />
+      <created>1696258740732</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1696258740732</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -550,7 +544,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Suppression d'un test junit empechant le deploiement" />
     <MESSAGE value="Correction pom.xml, installation procfile" />
     <MESSAGE value="Test déploiement automatique" />
     <MESSAGE value="Integration maven" />
@@ -575,7 +568,8 @@
     <MESSAGE value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
+    <MESSAGE value="Finalisation envoi de données via formulaire vue + controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalisation envoi de données via formulaire vue + controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

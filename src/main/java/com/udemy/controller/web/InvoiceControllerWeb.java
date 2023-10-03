@@ -45,12 +45,12 @@ public class InvoiceControllerWeb {
         return "invoice-home";
     }
 
-    @GetMapping("/{id}")
+    /*@GetMapping("/{id}")
     public String displayInvoice(@PathVariable("id") String number, Model model){
         System.out.println("La méthod displayInvoice a été invoquée");
         model.addAttribute("invoice", service.getInvoiceByNumber(number));
         return "invoice-details";
-    }
+    }*/
 
     @GetMapping("/create-form")
     public String displayInvoiceCreateForm(@ModelAttribute InvoiceForm invoice){

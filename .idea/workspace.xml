@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@Valid - Internationalisation des messages d'erreur depuis la librairie hibernate validation et personnalisation">
-      <change afterPath="$PROJECT_DIR$/documentation/REST_types_url.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="REST - Introduction">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,15 +128,7 @@
       <workItem from="1695968707402" duration="101000" />
       <workItem from="1695968815438" duration="18605000" />
       <workItem from="1696167404860" duration="5148000" />
-      <workItem from="1696234557202" duration="12688000" />
-    </task>
-    <task id="LOCAL-00019" summary="Autowiring @Autowired @Resource @Inject">
-      <option name="closed" value="true" />
-      <created>1695652723916</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1695652723916</updated>
+      <workItem from="1696234557202" duration="14092000" />
     </task>
     <task id="LOCAL-00020" summary="@Value mise en place">
       <option name="closed" value="true" />
@@ -518,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696339149522</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="REST - Introduction">
+      <option name="closed" value="true" />
+      <created>1696347767602</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1696347767602</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -543,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Correction du fichier procfile pour faire correspondre au nom de l'executable deposé dans le dossier target" />
     <MESSAGE value="changement plugin maven build" />
     <MESSAGE value="Application context explication" />
     <MESSAGE value="Compilation finale de l'application en self executable avant de passer en Application Web avec Spring Boot" />
@@ -568,7 +571,8 @@
     <MESSAGE value="@Valid - gestion des erreurs - routage sur page en cours si erreur" />
     <MESSAGE value="@Valid - Affichage de messages personnalisés d'erreurs sur les champs utilisateur" />
     <MESSAGE value="@Valid - Internationalisation des messages d'erreur depuis la librairie hibernate validation et personnalisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Valid - Internationalisation des messages d'erreur depuis la librairie hibernate validation et personnalisation" />
+    <MESSAGE value="REST - Introduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST - Introduction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

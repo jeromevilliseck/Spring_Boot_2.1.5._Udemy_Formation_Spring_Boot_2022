@@ -2,15 +2,12 @@ package com.udemy.api;
 
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/invoice")
 public class InvoiceApi {
     @Autowired

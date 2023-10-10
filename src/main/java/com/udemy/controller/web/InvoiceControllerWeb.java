@@ -24,7 +24,7 @@ public class InvoiceControllerWeb {
     }
 
     //Tjrs placer l'objet BindingResult après le dernier model attribute
-    @PostMapping( "")
+    @PostMapping("/create")
     public String createInvoice(@Valid @ModelAttribute InvoiceForm invoiceForm, BindingResult results) {
         if (results.hasErrors()){
             //Permet de rester sur le formulaire en cas d'erreurs sur la page, règles en lien avec @Valid dans InvoiceForm

@@ -17,7 +17,7 @@ public class InvoiceApi {
         this.service = service;
     }
 
-    @GetMapping("")
+    @GetMapping
     @ResponseBody
     public List<Invoice> get(){
         return service.getInvoiceList();
@@ -29,7 +29,7 @@ public class InvoiceApi {
         return service.getInvoiceByNumber(number);
     }
 
-    @PostMapping("/create")
+    @PostMapping("/create/JsonPost")
     @ResponseBody //RequestBody va transformer du JSON ou autre en Objet Entité correspondant
     public Invoice post(@RequestBody Invoice invoice){
         return service.createInvoice(invoice);

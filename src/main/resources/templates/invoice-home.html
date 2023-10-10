@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestion des factures</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
 <h1>Bienvenue dans la page de gestion des factures</h1>
@@ -10,15 +11,21 @@
 <ul>
     <li><a href="create-form">Ajout de facture</a></li>
 </ul>
-<table style="border: 1px solid black">
-    <tr th:each="invoice: ${invoices}">
-        <td>
-            <!--Convention des urls en thymeleaf -> @{ENTITE_CIBLEE}/variable_model-->
-            <a th:href="${invoice.number}" th:text="${invoice.number}"></a>
-        </td>
-        <td th:text="${invoice.customerName}"></td>
-    </tr>
-</table>
+
+<section class="container">
+    <div class="left-half">
+        <article id="invoice-list">
+
+        </article>
+    </div>
+    <div class="right-half">
+        <article id="invoice-detail">
+
+        </article>
+    </div>
+</section>
+
 <span th:text="${#locale.country}"></span>
+<script th:src="@{/js/script.js}"></script>
 </body>
 </html>

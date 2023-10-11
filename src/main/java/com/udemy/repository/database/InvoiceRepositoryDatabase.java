@@ -38,12 +38,14 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
                 (rs, rowNum) -> new Invoice(String.valueOf(rs.getLong("INVOICE_NUMBER")), rs.getString("CUSTOMER_NAME")));
     }
 
+    /*Méthode retournant un objet
+    1. requete sql avec ? pour les paramètres
+    2. objets à mettre a la place des paramètres ?
+     */
     @Override
     public Invoice getInvoiceById(String number) {
-        Invoice invoiceReturned = new Invoice();
-        invoiceReturned.setNumber(number);
-        invoiceReturned.setCustomerName("Mirror");
-        invoiceReturned.setOrderNumber("ON_002");
-        return invoiceReturned;
+        return jdbcTemplate.queryForObject("SELECT INVOICE_NUMBER, CUSTOMER_NAME, ORDER_NUMBER FROM INVOICE WHERE INVOICE_NUMBER = ?",
+                new Object[]{number},
+                (rs, rowNum) -> new Invoice(String.valueOf(rs.getLong("INVOICE_NUMBER")), rs.getString("CUSTOMER_NAME"), rs.getString("ORDER_NUMBER")));
     }
 }

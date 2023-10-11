@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Desactivation DataConfig et passage paramétrage par applications.properties">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,15 +175,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="11881000" />
-    </task>
-    <task id="LOCAL-00028" summary="Changement de lancement de l'APP par classe dédiée à la configuration + fichier xml de propriété (mix)">
-      <option name="closed" value="true" />
-      <created>1695722260762</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1695722260762</updated>
+      <workItem from="1697002402804" duration="13387000" />
     </task>
     <task id="LOCAL-00029" summary="Placement de la configuration dans la classe App principale">
       <option name="closed" value="true" />
@@ -572,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697020379054</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste">
+      <option name="closed" value="true" />
+      <created>1697023450861</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1697023450861</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -597,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Affichage d'une liste à la vue : modification couche repository" />
     <MESSAGE value="Affichage d'une liste à la vue : modification couche controleur" />
     <MESSAGE value="Thymeleaf : utilisation dans le controleur de l'objet HttpServletRequest pour transmettre des données aux vues" />
     <MESSAGE value="Minor change" />
@@ -622,7 +618,8 @@
     <MESSAGE value="Ajout API JBBC + connecteur" />
     <MESSAGE value="Connection à la BDD + Bloc de test de la connexion, Avec un Paramétrage via DataConfig (si BDD multiples dans le projet)" />
     <MESSAGE value="Desactivation DataConfig et passage paramétrage par applications.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Desactivation DataConfig et passage paramétrage par applications.properties" />
+    <MESSAGE value="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste" />
+    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

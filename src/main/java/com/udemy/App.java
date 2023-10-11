@@ -5,12 +5,40 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 @SpringBootApplication
 public class App {
+    /**
+     *
+     */
     public static void main(String[] args) {
-        //L'application context sert pour faire des programmes console ou shell qui s'arrêtent après une exécution
         ApplicationContext context = SpringApplication.run(App.class, args);
-        //La désactivation de l'implémentation de l'interface InvoiceControllerInterface sur InvoiceControllerWeb ne permet plus de faire remonter le bean
-        //InvoiceControllerInterface invoiceControllerInterface = context.getBean(InvoiceControllerInterface.class);
+
+        //Bloc de test de la connexion SQL
+        DataSource ds = context.getBean(DataSource.class);
+        Connection conn = null;
+        try {
+            conn = ds.getConnection();
+            System.out.println("connect ok");
+            ResultSet rs = conn.createStatement().executeQuery("SELECT INVOICE_NUMBER, CUSTOMER_NAME FROM INVOICE");
+            while (rs.next()){
+                System.out.println(rs.getLong("INVOICE_NUMBER") + " | " + rs.getString("CUSTOMER_NAME"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

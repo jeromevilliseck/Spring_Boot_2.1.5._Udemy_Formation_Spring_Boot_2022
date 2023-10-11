@@ -1,3 +1,4 @@
+/**
 package com.udemy.repository.database;
 
 import com.udemy.entity.Invoice;
@@ -46,7 +47,7 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
      *  paramètres de la méthode query
      *  1. Requête SQL
      *  2. objet RowMapper, classe permettant d'itérer sur le resultset et de fabriquer des objets en conséquence, ce qu'on ferait avec du jdbc natif
-     */
+     /
 
     @Override
     public List<Invoice> list() {
@@ -58,7 +59,7 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
     /*Méthode retournant un objet
     1. requete sql avec ? pour les paramètres
     2. objets à mettre a la place des paramètres ?
-     */
+     /
     @Override
     public Invoice getInvoiceById(String number) {
         return jdbcTemplate.queryForObject("SELECT INVOICE_NUMBER, CUSTOMER_NAME, ORDER_NUMBER FROM INVOICE WHERE INVOICE_NUMBER = ?",
@@ -66,3 +67,5 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
                 (rs, rowNum) -> new Invoice(String.valueOf(rs.getLong("INVOICE_NUMBER")), rs.getString("CUSTOMER_NAME"), rs.getString("ORDER_NUMBER")));
     }
 }
+
+**/

@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="JDBCTemplate -&gt; retour d'un tuple de la base de donnée avec recherche par paramètre">
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée">
+      <change afterPath="$PROJECT_DIR$/documentation/18_Spring_Data_JDBC_Explications" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
     </list>
@@ -180,15 +186,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="14223000" />
-    </task>
-    <task id="LOCAL-00030" summary="Conservation annotée d'un seul repository, service, controleur">
-      <option name="closed" value="true" />
-      <created>1695734119304</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1695734119304</updated>
+      <workItem from="1697002402804" duration="19369000" />
     </task>
     <task id="LOCAL-00031" summary="Suppression du parametre basePackages">
       <option name="closed" value="true" />
@@ -574,7 +572,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697023804431</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée">
+      <option name="closed" value="true" />
+      <created>1697024856674</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1697024856674</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -599,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Thymeleaf : utilisation dans le controleur de l'objet HttpServletRequest pour transmettre des données aux vues" />
     <MESSAGE value="Minor change" />
     <MESSAGE value="Thymeleaf : insertion url dans la vue pour accéder à une facture, convention de l'url en thymeleaf expliquée" />
     <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
@@ -624,7 +629,8 @@
     <MESSAGE value="Desactivation DataConfig et passage paramétrage par applications.properties" />
     <MESSAGE value="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste" />
     <MESSAGE value="JDBCTemplate -&gt; retour d'un tuple de la base de donnée avec recherche par paramètre" />
-    <option name="LAST_COMMIT_MESSAGE" value="JDBCTemplate -&gt; retour d'un tuple de la base de donnée avec recherche par paramètre" />
+    <MESSAGE value="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

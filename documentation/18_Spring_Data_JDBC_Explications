@@ -1,0 +1,20 @@
+Pour gérer les bases de données, soit :
+
+On passe par la dépendance JDBC API + 1 dépendance relative au dialect SQL utilisé (mysql, oracle, mariaDB..)
+- On utilisera une classe Datasource en cas de connexion à des bases de données multiples
+- Si une seule BDD on passera seulement par le fichier application.properties (spring.datasource.) avec au minimum l'url, les ids mdp, le driver
+- On va alors dans la couche repository implémenter des méthodes query à partir d'un objet JdbcTemplate pour faire les transactions avec la BDD
+
+On passe par la dépendance Spring Data JDBC (+ récent que JPA, recommandé)
+- On va alors se baser sur une Interface qui étendra CrudRepository<Entité constituant l'aggregate root, Type de l'identifiant de l'agreggate root>
+- On aura une autocomplétion de méthode : les services n'auront plus qu'à exploiter de cette façon la couche repository
+- invoiceRepository.save(invoice) (avec un lot de méthodes disponibles)
+- (parsing) Pour une entité le NOM_COLONNE en base donnera nomColonne en entité
+- On utilisera les annotations @Id, @Column (si jamais on a pas respecté le parsing) sur les entités
+
+On passe par la dépendance Spring Data JPA
+
+
+**Voir la leçon video 49 et 50 de
+https://www.udemy.com/course/bien-debuter-avec-spring-et-spring-boot/
+pour les notions conceptuelles de Spring Data JDBC et JPA.

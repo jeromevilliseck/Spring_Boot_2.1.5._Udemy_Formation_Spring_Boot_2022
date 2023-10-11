@@ -19,24 +19,24 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     private final InvoiceRepositoryInterface invoiceRepositoryMichel;
 
-    @Autowired
+    //@Autowired
     public InvoiceServicePrefix(InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }
 
     public Invoice createInvoice(Invoice invoice){
         invoice.setNumber(prefix+(++lastNumber));
-        invoiceRepositoryMichel.create(invoice);
+        invoiceRepositoryMichel.save(invoice);
         return invoice;
     }
 
     @Override
-    public List<Invoice> getInvoiceList() {
-        return invoiceRepositoryMichel.list();
+    public Iterable<Invoice> getInvoiceList() {
+        return invoiceRepositoryMichel.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number) {
-        return invoiceRepositoryMichel.getInvoiceById(number);
+        return invoiceRepositoryMichel.findById(number).orElseThrow();
     }
 }

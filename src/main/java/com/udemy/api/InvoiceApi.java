@@ -19,7 +19,7 @@ public class InvoiceApi {
 
     @GetMapping
     @ResponseBody
-    public List<Invoice> get(){
+    public Iterable<Invoice> get(){
         return service.getInvoiceList();
     }
 

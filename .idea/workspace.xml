@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée">
-      <change afterPath="$PROJECT_DIR$/documentation/18_Spring_Data_JDBC_Explications" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JDBC : Mise en oeuvre">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/18_Spring_Data_JDBC_Explications" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/18_Spring_Data_JDBC_Explications.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/InvoiceServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,15 +180,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="19369000" />
-    </task>
-    <task id="LOCAL-00031" summary="Suppression du parametre basePackages">
-      <option name="closed" value="true" />
-      <created>1695734297235</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1695734297235</updated>
+      <workItem from="1697002402804" duration="20851000" />
     </task>
     <task id="LOCAL-00032" summary="Suppression du parametre basePackages">
       <option name="closed" value="true" />
@@ -580,7 +566,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697024856674</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Spring Data JDBC : Mise en oeuvre">
+      <option name="closed" value="true" />
+      <created>1697030573753</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1697030573753</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -605,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Minor change" />
     <MESSAGE value="Thymeleaf : insertion url dans la vue pour accéder à une facture, convention de l'url en thymeleaf expliquée" />
     <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
     <MESSAGE value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
@@ -630,7 +623,8 @@
     <MESSAGE value="JdbcTemplate -&gt; utilisation de query, récupération d'un jeu d'objet sous forme de liste" />
     <MESSAGE value="JDBCTemplate -&gt; retour d'un tuple de la base de donnée avec recherche par paramètre" />
     <MESSAGE value="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée" />
-    <option name="LAST_COMMIT_MESSAGE" value="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée" />
+    <MESSAGE value="Spring Data JDBC : Mise en oeuvre" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JDBC : Mise en oeuvre" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

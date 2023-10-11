@@ -20,6 +20,7 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
     @Override
     public Iterable<Invoice> findAll() {
+        System.out.println("implem lancée");
         throw new UnsupportedOperationException();
     }
 

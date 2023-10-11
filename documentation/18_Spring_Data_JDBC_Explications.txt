@@ -6,6 +6,7 @@ On passe par la dépendance JDBC API + 1 dépendance relative au dialect SQL uti
 - On va alors dans la couche repository implémenter des méthodes query à partir d'un objet JdbcTemplate pour faire les transactions avec la BDD
 
 On passe par la dépendance Spring Data JDBC (+ récent que JPA, recommandé)
+- @EnableJdbcRepositories sur la classe principale de l'application
 - On va alors se baser sur une Interface qui étendra CrudRepository<Entité constituant l'aggregate root, Type de l'identifiant de l'agreggate root>
 - On aura une autocomplétion de méthode : les services n'auront plus qu'à exploiter de cette façon la couche repository
 - invoiceRepository.save(invoice) (avec un lot de méthodes disponibles)
@@ -13,7 +14,9 @@ On passe par la dépendance Spring Data JDBC (+ récent que JPA, recommandé)
 - On utilisera les annotations @Id, @Column (si jamais on a pas respecté le parsing) sur les entités
 
 On passe par la dépendance Spring Data JPA
-
+- @EnableJpaRepositories sur la classe principale de l'application
+- rien ne changera sur l'interface CrudRepository, si il n'y a pas de query
+- il y aura un entityMAnagerFactory, un entityManager
 
 **Voir la leçon video 49 et 50 de
 https://www.udemy.com/course/bien-debuter-avec-spring-et-spring-boot/

@@ -1,12 +1,11 @@
 package com.udemy.entity;
+import jakarta.persistence.*;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Column;
-
-//JDBC -> La facture devient l'aggregate root
+@Entity
 public class Invoice {
     @Id
-    @Column("INVOICE_NUMBER")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name =  "INVOICE_NUMBER")
     private String number;
     private String customerName;
     private String orderNumber;

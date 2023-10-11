@@ -12,9 +12,6 @@ import java.sql.SQLException;
 
 @SpringBootApplication
 public class App {
-    /**
-     *
-     */
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(App.class, args);
 

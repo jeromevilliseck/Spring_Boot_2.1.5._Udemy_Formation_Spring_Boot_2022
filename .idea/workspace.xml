@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="@RestController">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/script.js" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Asynchrone avec thymeleaf">
+      <change afterPath="$PROJECT_DIR$/documentation/FieldInjectionExplications.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/InvoiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jeromevilliseck"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c1627baa-ae89-4036-b98a-0242cf4617d9" />
+        <option name="url" value="https://github.com/jeromevilliseck/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
   </component>
@@ -48,27 +58,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/src/main/resources/static/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VILLISECK/IdeaProjects/java-getting-started&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static\css" />
@@ -155,15 +165,10 @@
       <workItem from="1696234557202" duration="14713000" />
       <workItem from="1696432969131" duration="3935000" />
       <workItem from="1696862722656" duration="1246000" />
-      <workItem from="1696927567709" duration="2801000" />
-    </task>
-    <task id="LOCAL-00022" summary="Utilisation du component scan pr point d'entrée du scan pour les DI, @Component, @Service, @Repository">
-      <option name="closed" value="true" />
-      <created>1695656170411</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1695656170411</updated>
+      <workItem from="1696927567709" duration="4294000" />
+      <workItem from="1696947072948" duration="9000" />
+      <workItem from="1696948220193" duration="159000" />
+      <workItem from="1697002402804" duration="2505000" />
     </task>
     <task id="LOCAL-00023" summary="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable">
       <option name="closed" value="true" />
@@ -549,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696349241675</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Asynchrone avec thymeleaf">
+      <option name="closed" value="true" />
+      <created>1696931795930</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1696931795930</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -574,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Passage en application spring boot web" />
     <MESSAGE value="Changement de port par default et chemin par defaut" />
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
     <MESSAGE value="Gestion des ressources statiques sur disque local" />
@@ -599,7 +611,8 @@
     <MESSAGE value="@RestController et @ RequestBody" />
     <MESSAGE value="@RestController et @RequestBody" />
     <MESSAGE value="@RestController" />
-    <option name="LAST_COMMIT_MESSAGE" value="@RestController" />
+    <MESSAGE value="Asynchrone avec thymeleaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Asynchrone avec thymeleaf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

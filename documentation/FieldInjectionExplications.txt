@@ -1,0 +1,28 @@
+https://stackoverflow.com/questions/39890849/what-exactly-is-field-injection-and-how-to-avoid-it
+
+Injection types
+
+There are three options for how dependencies can be injected into a bean:
+- Through a constructor
+- Through setters or other methods
+- Through reflection, directly into fields
+You are using option 3. That is what is happening when you use @Autowired directly on your field.
+
+Conclusion
+
+En fonction de vos besoins, vous devriez principalement utiliser l'injection de constructeur ou un mélange d'injection
+de constructeur et de setter. L'injection de champ présente de nombreux inconvénients et doit être évitée.
+ Le seul avantage de l'injection de champ est qu'elle est plus pratique à écrire,
+ ce qui ne compense pas tous les inconvénients.
+
+ Voici la méthode recommandée en 2023 :
+
+ @Component
+ public class MyComponent {
+     private final Cart cart;
+
+     @Autowired
+     public MyComponent(Cart cart){
+        this.cart = cart;
+     }
+ }

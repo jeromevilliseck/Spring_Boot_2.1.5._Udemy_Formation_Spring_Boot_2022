@@ -16,9 +16,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/invoice")
 public class InvoiceControllerWeb {
-    @Autowired
     private final InvoiceServiceInterface service;
 
+    @Autowired
     public InvoiceControllerWeb(InvoiceServiceInterface service) {
         this.service = service;
     }

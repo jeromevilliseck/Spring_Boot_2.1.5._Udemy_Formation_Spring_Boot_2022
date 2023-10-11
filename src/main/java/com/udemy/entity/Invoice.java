@@ -5,9 +5,11 @@ import jakarta.persistence.*;
 public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name =  "INVOICE_NUMBER")
+    @Column(name =  "INVOICE_NUMBER", columnDefinition = "BIGINT")
     private String number;
+    @Column(nullable = false, length = 50)
     private String customerName;
+    @Column(length = 13)
     private String orderNumber;
 
     public Invoice(String number, String customerName) {

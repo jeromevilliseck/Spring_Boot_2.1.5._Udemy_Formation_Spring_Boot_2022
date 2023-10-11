@@ -1,0 +1,8 @@
+- Tout ORM jdbc, hibernate, peut générer les tables du modèle de données sur la base des annotations placées dans les entités
+- c'est le mode ddl-auto dans hibernate
+- jpa avec srping boot -> comportement par defaut demandant à l'orm de créer ces tables
+- si et seulement si il s'agit d'une base de donnée mémoire ! H2
+
+SAUF SI dans application.properties:
+spring.jpa.generate-ddl=true
+

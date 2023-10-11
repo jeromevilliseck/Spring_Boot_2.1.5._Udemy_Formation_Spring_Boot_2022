@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Connection à la BDD + Bloc de test de la connexion, Avec un Paramétrage via DataConfig (si BDD multiples dans le projet)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/connexions/DataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/connexions/DataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Connection à la BDD + Bloc de test de la connexion, Avec un Paramétrage via DataConfig (si BDD multiples dans le projet)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,15 +173,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="9384000" />
-    </task>
-    <task id="LOCAL-00026" summary="Changement de lancement de l'APP par classe dédiée à la configuration">
-      <option name="closed" value="true" />
-      <created>1695722067119</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1695722067119</updated>
+      <workItem from="1697002402804" duration="10081000" />
     </task>
     <task id="LOCAL-00027" summary="Changement de lancement de l'APP par classe dédiée à la configuration">
       <option name="closed" value="true" />
@@ -571,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697018936304</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Connection à la BDD + Bloc de test de la connexion, Avec un Paramétrage via DataConfig (si BDD multiples dans le projet)">
+      <option name="closed" value="true" />
+      <created>1697020278187</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1697020278187</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">

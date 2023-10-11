@@ -17,9 +17,9 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     @Value("${invoice.prefix}")
     private String prefix;
 
-    @Autowired
     private final InvoiceRepositoryInterface invoiceRepositoryMichel;
 
+    @Autowired
     public InvoiceServicePrefix(InvoiceRepositoryInterface invoiceRepositoryMichel) {
         this.invoiceRepositoryMichel = invoiceRepositoryMichel;
     }

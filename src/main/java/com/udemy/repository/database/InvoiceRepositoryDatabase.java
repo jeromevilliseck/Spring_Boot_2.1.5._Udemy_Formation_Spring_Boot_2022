@@ -5,10 +5,15 @@ import com.udemy.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 //@Repository donne accès à un jdbc template
 @Repository
@@ -21,8 +26,20 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
     private final JdbcTemplate jdbcTemplate;
 
 
-    public void create(Invoice invoice){
-        System.out.println("DB -> Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
+    public Invoice create(Invoice invoice){
+        KeyHolder kh = new GeneratedKeyHolder();
+
+        //MISE A JOUR
+        jdbcTemplate.update(con -> {
+            PreparedStatement ps = con.prepareStatement("INSERT INTO INVOICE(CUSTOMER_NAME,ORDER_NUMBER) VALUES (?,?)", Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, invoice.getCustomerName());
+            ps.setString(2, invoice.getOrderNumber());
+            return ps;
+        }, kh);
+
+        //RECUPERATION DE LA CLE AUTOGENEREE
+        invoice.setNumber(Objects.requireNonNull(kh.getKey()).toString());
+        return invoice;
     }
 
     /**

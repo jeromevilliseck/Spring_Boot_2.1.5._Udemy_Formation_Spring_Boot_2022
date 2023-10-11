@@ -4,10 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Asynchrone avec thymeleaf">
-      <change afterPath="$PROJECT_DIR$/documentation/FieldInjectionExplications.txt" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/@Autowired_@Resource_@Inject.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/04_@Autowired_@Resource_@Inject.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/BackingBeanExplication.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/11_Backing_Bean_Avec_Thymeleaf_Explication.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/BackingBeanNotion.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/12_Backing_Bean_Schema_Explicatif.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Common application properties variables.url" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/07_Application_Properties_variables_listing_complet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/FieldInjectionExplications.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/17_Field_Injection_Explications_Bonne_Pratique.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/HerokuInstructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/05_Heroku_Authentification_a_son_compte_connexion_bdd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/IntelliJ_Set_HotReload_SpringProject.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/08_IntelliJ_Set_HotReload_SpringProject_Non_Fonctionnel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/IntellijCmd.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/09_Intellij_Classpath_Pour_Utiliser_Programmes_Dans_Terminal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/MomentsClesFormation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/10_Moments_Cles_Formation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/REST_types_url.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/13_REST_types_bonnes_url_convention.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/applicationContextExplained.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/03_Creation_Explication_de_ApplicationContext.xml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/applicationWebExplications.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/06_Difference_JAVAEE_Spring_WAR_JAR.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/conflitsDependances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/14_Conflits_Dependances.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/type_valorises_pr_conversion_application_context.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/16_Types_Reconnus_Par_Application_Context.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ideaConfigs/00_CreateProject.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/00_Creation_Projet_Parametrage_Avec_Assistant_IntelliJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ideaConfigs/01_Checking_Jdk_Version_Compilator.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/01_Controle_de_la_version_du_compilateur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ideaConfigs/02_ProjectLevelLangageStructure.png" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/02_Project_Level_Langage_Structure.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +104,11 @@
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\documentation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static\js" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources\templates" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
-      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022\src\main\resources\documentation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.udemy" />
@@ -168,15 +184,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="2505000" />
-    </task>
-    <task id="LOCAL-00023" summary="2023/05 UPDATE : Injection de dépendance par constructeur et design pattern immutable">
-      <option name="closed" value="true" />
-      <created>1695657698659</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1695657698659</updated>
+      <workItem from="1697002402804" duration="5763000" />
     </task>
     <task id="LOCAL-00024" summary="Résolution des conflits de dépendances au scan spring des packages par répartition par package">
       <option name="closed" value="true" />
@@ -562,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696931795930</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Résolution du problème relatif à l'injection de dépendance par champ, utilisation de l'injection de dépendance par constructeur paramétré">
+      <option name="closed" value="true" />
+      <created>1697005443150</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1697005443150</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -587,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Changement de port par default et chemin par defaut" />
     <MESSAGE value="Remplacement de Tomcat par undertow avec gestion exclusion des dependances transitives" />
     <MESSAGE value="Gestion des ressources statiques sur disque local" />
     <MESSAGE value="@RequestMapping et ressource statique" />
@@ -612,7 +627,8 @@
     <MESSAGE value="@RestController et @RequestBody" />
     <MESSAGE value="@RestController" />
     <MESSAGE value="Asynchrone avec thymeleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Asynchrone avec thymeleaf" />
+    <MESSAGE value="Résolution du problème relatif à l'injection de dépendance par champ, utilisation de l'injection de dépendance par constructeur paramétré" />
+    <option name="LAST_COMMIT_MESSAGE" value="Résolution du problème relatif à l'injection de dépendance par champ, utilisation de l'injection de dépendance par constructeur paramétré" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

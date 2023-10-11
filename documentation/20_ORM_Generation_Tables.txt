@@ -6,3 +6,23 @@
 SAUF SI dans application.properties:
 spring.jpa.generate-ddl=true
 
+DONC RESUME
+
+METHODE 1
+-> soit on crée les entités puis avec
+spring.jpa.generate-ddl=true
+l'orm va créer les tables correspondantes.
+il est alors possible ensuite avec un fichier data.sql d'alimenter automatiquement ces tables au démarrage de l'application
+
+METHODE 2
+-> soit on utilise un script schema.sql, dans ce cas on désactive
+spring.jpa.generate-ddl=false
+du coup l'orm ne créer pas les tables
+spring.sql.init.mode=always
+va créer les tables au démarrage de l'app
+on peut ensuite alimenter les tables avec data.sql
+
+METHODE 3
+-> soit on lance les scripts dans le client DBeaver directement,
+en ayant modélisé les tables à partir d'un MCD MLD MPD Merise, puis en ayant généré le fichier de script correspondant.
+et on crée les entités correspondant à nos tables en base de donnée

@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : Mise en oeuvre simple avec une table sans jointure">
-      <change afterPath="$PROJECT_DIR$/documentation/19_Schema_Modelisation_Base_Avec_Aggregats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/19_Schema_Modelisation_Base_Déclinaison_SHema_SQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/20_ORM_Generation_Tables.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/21_GenerationAutomatiqueTableHibernate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice2.java" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir des entités">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/20_ORM_Generation_Tables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/20_ORM_Generation_Tables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/documentation",
+    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,10 +93,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static\css" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static" />
-      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -183,15 +181,7 @@
       <workItem from="1696927567709" duration="4294000" />
       <workItem from="1696947072948" duration="9000" />
       <workItem from="1696948220193" duration="159000" />
-      <workItem from="1697002402804" duration="23249000" />
-    </task>
-    <task id="LOCAL-00033" summary="Mise en place de l'annotation @SpringBootApplication">
-      <option name="closed" value="true" />
-      <created>1695737600682</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1695737600682</updated>
+      <workItem from="1697002402804" duration="24267000" />
     </task>
     <task id="LOCAL-00034" summary="@SpringBootApplication avec entête SpringBoot">
       <option name="closed" value="true" />
@@ -577,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697032123274</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir des entités">
+      <option name="closed" value="true" />
+      <created>1697036539040</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1697036539040</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -602,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Controller : Mise en place d'une requete d'accès à une unité d'entité" />
     <MESSAGE value="Invoice entité : création des méthodes sur la couche service et repository pour retourner une seule facture" />
     <MESSAGE value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
     <MESSAGE value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
@@ -627,7 +624,8 @@
     <MESSAGE value="JDBC -&gt; C create : écriture d'objet en base de donnée et retour de la clé autogénérée" />
     <MESSAGE value="Spring Data JDBC : Mise en oeuvre" />
     <MESSAGE value="Spring Data JPA : Mise en oeuvre simple avec une table sans jointure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : Mise en oeuvre simple avec une table sans jointure" />
+    <MESSAGE value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir des entités" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir des entités" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

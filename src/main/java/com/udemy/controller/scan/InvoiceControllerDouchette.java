@@ -1,6 +1,7 @@
 package com.udemy.controller.scan;
 
 import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.entity.Customer;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 
@@ -18,7 +19,8 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface {
         System.out.println("Usage du scanner");
         //Entité
         invoice = new Invoice();
-        invoice.setCustomerName("Virgin Galactic");
+        Customer customer = new Customer("Virgin Galactic");
+        invoice.setCustomer(customer);
         invoiceService.createInvoice(invoice);
         return null;
     }

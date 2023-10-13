@@ -1,6 +1,7 @@
 package com.udemy.controller.web;
 
 import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.entity.Customer;
 import com.udemy.entity.Invoice;
 import com.udemy.form.InvoiceForm;
 import com.udemy.service.InvoiceServiceInterface;
@@ -31,7 +32,8 @@ public class InvoiceControllerWeb {
             return "invoice-create-form";
         }
         Invoice invoice = new Invoice();
-        invoice.setCustomerName(invoiceForm.getCustomerName());
+        Customer customer = new Customer(invoiceForm.getCustomerName());
+        invoice.setCustomer(customer);
         invoice.setOrderNumber(invoiceForm.getOrderNumber());
         service.createInvoice(invoice);
 

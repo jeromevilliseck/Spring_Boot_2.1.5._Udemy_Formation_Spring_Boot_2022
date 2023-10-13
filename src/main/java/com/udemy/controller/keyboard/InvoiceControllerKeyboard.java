@@ -1,6 +1,7 @@
 package com.udemy.controller.keyboard;
 
 import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.entity.Customer;
 import com.udemy.entity.Invoice;
 import com.udemy.service.InvoiceServiceInterface;
 
@@ -20,7 +21,8 @@ public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
         Scanner sc = new Scanner(System.in);
         String customerName = sc.nextLine();
         invoice = new Invoice();
-        invoice.setCustomerName(customerName);
+        Customer customer = new Customer(customerName);
+        invoice.setCustomer(customer);
         invoiceService.createInvoice(invoice);
         return null;
     }

@@ -3,6 +3,7 @@ package com.udemy.service.number;
 import com.udemy.entity.Invoice;
 import com.udemy.repository.InvoiceRepositoryInterface;
 import com.udemy.service.InvoiceServiceInterface;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,10 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
 
     @Override
     public Iterable<Invoice> getInvoiceList() {
-        return invoiceRepository.findAll();
+        Iterable<Invoice> invoices = invoiceRepository.findAll();
+        //Initialise le customer de chaque facture
+        invoices.forEach(invoice -> Hibernate.initialize(invoice.getCustomer()));
+        return invoices;
     }
 
     //Plutot que faire un retour Optionnal<Invoice>, on lance un no such element exception si on ne trouve pas de facture

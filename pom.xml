@@ -62,6 +62,12 @@
       <scope>runtime</scope>
     </dependency>
 
+    <!--Voir 23_Open_Session_In_View de la documentation pour comprendre-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-hibernate6</artifactId>
+    </dependency>
+
   </dependencies>
 
   <build>

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) plus besoin avec Hibernate6Module les proxy seront mis a null
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

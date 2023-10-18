@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir d'un fichier schema.sql">
-      <change afterPath="$PROJECT_DIR$/documentation/22_Spring_OpenInView_RecuperationParCouchesDeJointures.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/InvoiceLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Product.java" afterDir="false" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte">
+      <change afterPath="$PROJECT_DIR$/documentation/23_Open_Session_In_View.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/keyboard/InvoiceControllerKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,15 +185,10 @@
       <workItem from="1697002402804" duration="24670000" />
       <workItem from="1697103285311" duration="857000" />
       <workItem from="1697122752012" duration="1781000" />
-      <workItem from="1697187368677" duration="2244000" />
-    </task>
-    <task id="LOCAL-00035" summary="Conservation des dépendances minimales - Préparation à l'intégration continue avec Heroku">
-      <option name="closed" value="true" />
-      <created>1695901872550</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1695901872550</updated>
+      <workItem from="1697187368677" duration="4225000" />
+      <workItem from="1697221547299" duration="700000" />
+      <workItem from="1697535314398" duration="1171000" />
+      <workItem from="1697605160224" duration="6580000" />
     </task>
     <task id="LOCAL-00036" summary="Suppression d'un test junit empechant le deploiement">
       <option name="closed" value="true" />
@@ -584,7 +574,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697037841444</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte">
+      <option name="closed" value="true" />
+      <created>1697213042656</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1697213042656</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -609,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="ModelAndView : système de retour des entités par objet ModelAndView transmis aux vues" />
     <MESSAGE value="Model : utilisation du paramètre de type Model pour transmettre les données a la vue (+ simple)" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
@@ -634,7 +631,8 @@
     <MESSAGE value="Spring Data JPA : Mise en oeuvre simple avec une table sans jointure" />
     <MESSAGE value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir des entités" />
     <MESSAGE value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir d'un fichier schema.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir d'un fichier schema.sql" />
+    <MESSAGE value="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte" />
+    <option name="LAST_COMMIT_MESSAGE" value="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

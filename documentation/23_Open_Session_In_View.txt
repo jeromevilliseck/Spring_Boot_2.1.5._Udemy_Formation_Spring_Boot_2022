@@ -1,0 +1,56 @@
+OpenSession In View (Hibernate)
+ou                                          =                      Session Manager encore ouvert
+Open EntityManager In View (JPA)
+
+spring.jpa.open-in-view is enabled by default
+
+Pour l'exemple et comprendre : Regardez l'entité Invoice qui contient un attribut Customer
+
+ENTITE
+- attribut0 id
+- attribut1 classique
+- attribut2 classique
+- attribut3 jointuree   ENTITE AGGREGAT         <- @JoinColumn, @ManyToOne(fetch = FetchType.LAZY)
+                        -attribut0 id
+                        -attribut1 classique
+
+LAZYLOADING = La propriété attribut3 de l'ENTITE va être sous forme de Proxy Hibernate
+Cet objet Proxy Hibernate contient l'identifiant du client uniquement
+Jackson au moment de vouloir convertir en JSON va aller dans chaque propriété de chaque facture de manière récursive.
+Hors la récursion par Jackson lorsqu'on veut accéder au propriété d'un proxy hibernate en lecture, il faut relancer de
+    nouvelles requêtes vers la base pour obtenir le reste des informations.
+    2 CAS de figures:
+        -session fermée -> exception LazyIntialisationException
+        -session ouverte -> requêtes supplémentaires déclenchées et l'hibernateProxy est complété de nouvelles infos obtenues sur l'entité aggregat
+
+Hibernate essaie de déproxifier les propriétés de Invoice, customer en premier lieu
+-> on peut voir dans les logs la requete supplémentaire balancée par Hibernate sur customer
+-> Jackson essaie de transformer en JSON toutes les propriétés des propriétés des proxys
+
+ERREUR
+through reference chain: java.util.ArrayList[0]->com.udemy.entity.Invoice["customer"]->com.udemy.entity.Customer["address"]->com.udemy.entity.Address$HibernateProxy$yDcNhJpg["hibernateLazyInitializer"]
+DEPROXIFIER
+= aller chercher les informations d'un attribut objet d'une entité
+
+L'annotation @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+sur une entité parent ne fonctionnera en effet que si il n'y a qu'un niveau enfant, sinon pr chaque niveau il faudra remettre l'annotation sur chaque entité
+
+3 SOLUTIONS existent :
+
+    Utiliser des DTO
+- utiliser des DTO (convertir les entités en d'autres objets taillé sur mesure pour les interfaces) - solution très utilisée
+  voir le cours des bases de données avec JAVA -> https://www.udemy.com/share/102gCq3@aC93tUPBYoiYAfSWeQxUmqbJ6ZBA_4wBQ6441NlWvulMZ_HlyHAyB8_cmHSbTWnPTQ==/
+
+    Nullifier les proxy avec Jackson
+- si la couche de controle retourne des entités et seulement si (voir la classe InvoiceApi)
+et leur propriétés sous forme de proxy soient mises à null avant que leur entité soit transformé en JSON par Jackson
+pour envoi au client -> la classe Hibernate5Module permet de nullifier les proxy
+-> aller dans le pom.xml du projet, puis ajouter jackson-datatype-hibernate5 ou jackson-datatype-hibernate6
+-> Placer dans la classe principale de l'application un @Bean Hibernate5Module
+
+
+- si la couche de controle retourne des entités et seulement si (voir la classe InvoiceApi)
+
+
+HttpMessageConverters <- jackson-datatype-hibernate6 s'y intègre
+= mécanisme de transformation Objet - Text ou Text - Objet

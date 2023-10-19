@@ -23,10 +23,9 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
 
     @Override
     public Iterable<Invoice> getInvoiceList() {
-        Iterable<Invoice> invoices = invoiceRepository.findAll();
-        //Initialise le customer de chaque facture
-        invoices.forEach(invoice -> Hibernate.initialize(invoice.getCustomer()));
-        return invoices;
+        //La jointure pour récupérer les informations de l'attribut enfant se fait dans la couche repository
+        //Je peux a nouveau utiliser un simple return
+        return invoiceRepository.findAll();
     }
 
     //Plutot que faire un retour Optionnal<Invoice>, on lance un no such element exception si on ne trouve pas de facture

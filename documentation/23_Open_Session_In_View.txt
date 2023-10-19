@@ -3,6 +3,8 @@ ou                                          =                      Session Manag
 Open EntityManager In View (JPA)
 
 spring.jpa.open-in-view is enabled by default
+-> il vaut mieux mettre dans application spring.jpa.open-in-view=false dans application.properties
+-> et il faudra utiliser alors l'annotation @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) sur les entités (voir plus bas)
 
 Pour l'exemple et comprendre : Regardez l'entité Invoice qui contient un attribut Customer
 
@@ -33,7 +35,7 @@ DEPROXIFIER
 = aller chercher les informations d'un attribut objet d'une entité
 
 L'annotation @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-sur une entité parent ne fonctionnera en effet que si il n'y a qu'un niveau enfant, sinon pr chaque niveau il faudra remettre l'annotation sur chaque entité
+sur une entité parent ne fonctionnera en effet que si il n'y a qu'un niveau enfant, sinon pr chaque niveau il faudra remettre l'annotation sur chaque entité (ça reste au final une solution simple)
 
 3 SOLUTIONS existent :
 
@@ -48,9 +50,13 @@ pour envoi au client -> la classe Hibernate5Module permet de nullifier les proxy
 -> aller dans le pom.xml du projet, puis ajouter jackson-datatype-hibernate5 ou jackson-datatype-hibernate6
 -> Placer dans la classe principale de l'application un @Bean Hibernate5Module
 
-
+    Les fetch à priori dans les repository
+    Utilisation des entity graphs
 - si la couche de controle retourne des entités et seulement si (voir la classe InvoiceApi)
+on écrit les requêtes avec des @Query en faisant des jointures sur les attributs objets d'une entité
+ou bien on utlise l'annotation @NamedEntityGraph sur les entités pour pouvoir récupérer les infos plus basses
 
+L'implémentation de ces solutions se trouvent sur les commits Spring Data JPA du projet.
 
 HttpMessageConverters <- jackson-datatype-hibernate6 s'y intègre
 = mécanisme de transformation Objet - Text ou Text - Objet

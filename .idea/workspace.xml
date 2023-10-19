@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : Ajout de documentation méthodologique">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/CustomerRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
-    </list>
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : C : Insertion de données avec contraintes de jointures respectée" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,14 +182,6 @@
       <workItem from="1697535314398" duration="1171000" />
       <workItem from="1697605160224" duration="8767000" />
       <workItem from="1697697991694" duration="676000" />
-    </task>
-    <task id="LOCAL-00040" summary="minor changes">
-      <option name="closed" value="true" />
-      <created>1695907091728</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1695907091728</updated>
     </task>
     <task id="LOCAL-00041" summary="minor changes">
       <option name="closed" value="true" />
@@ -582,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697700710143</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Spring Data JPA : C : Insertion de données avec contraintes de jointures respectée">
+      <option name="closed" value="true" />
+      <created>1697722463161</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1697722463161</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -607,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="@Valid - ajout de la gestion des erreurs" />
     <MESSAGE value="@Valid - gestion des erreurs - routage sur page en cours si erreur" />
     <MESSAGE value="@Valid - Affichage de messages personnalisés d'erreurs sur les champs utilisateur" />
     <MESSAGE value="@Valid - Internationalisation des messages d'erreur depuis la librairie hibernate validation et personnalisation" />
@@ -632,7 +624,8 @@
     <MESSAGE value="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
     <MESSAGE value="Spring Data JPA : Desactivation de spring.jpa.open-in-view (recommandé)" />
     <MESSAGE value="Spring Data JPA : Ajout de documentation méthodologique" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : Ajout de documentation méthodologique" />
+    <MESSAGE value="Spring Data JPA : C : Insertion de données avec contraintes de jointures respectée" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : C : Insertion de données avec contraintes de jointures respectée" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

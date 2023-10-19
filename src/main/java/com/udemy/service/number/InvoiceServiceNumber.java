@@ -8,6 +8,7 @@ import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
@@ -21,6 +22,8 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
         this.customerRepository = customerRepository;
     }
 
+    //Permet un rollback en cas de non respect d'une contrainte de table
+    @Transactional
     public Invoice createInvoice(Invoice invoice){
         customerRepository.save(invoice.getCustomer());
         return invoiceRepository.save(invoice);

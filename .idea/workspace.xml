@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : SOLUTION 1 : Utilisation de la méthode de nullification des proxys (Hibernate6Module)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/InvoiceRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
-    </list>
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,15 +181,7 @@
       <workItem from="1697221547299" duration="700000" />
       <workItem from="1697535314398" duration="1171000" />
       <workItem from="1697605160224" duration="8767000" />
-      <workItem from="1697697991694" duration="360000" />
-    </task>
-    <task id="LOCAL-00037" summary="Correction pom.xml, installation procfile">
-      <option name="closed" value="true" />
-      <created>1695906322555</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1695906322555</updated>
+      <workItem from="1697697991694" duration="676000" />
     </task>
     <task id="LOCAL-00038" summary="Test déploiement automatique">
       <option name="closed" value="true" />
@@ -580,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697640144980</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)">
+      <option name="closed" value="true" />
+      <created>1697698656784</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1697698656785</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -605,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue" />
     <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
     <MESSAGE value="Finalisation envoi de données via formulaire vue + controller" />
     <MESSAGE value="@Valid - ajout de la gestion des erreurs" />
@@ -630,7 +624,8 @@
     <MESSAGE value="Spring Data JPA : Paramétrage pour Génération automatique des tables à partir d'un fichier schema.sql" />
     <MESSAGE value="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte" />
     <MESSAGE value="Spring Data JPA : SOLUTION 1 : Utilisation de la méthode de nullification des proxys (Hibernate6Module)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : SOLUTION 1 : Utilisation de la méthode de nullification des proxys (Hibernate6Module)" />
+    <MESSAGE value="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,7 @@
 package com.udemy.controller.web;
 
 import com.udemy.controller.InvoiceControllerInterface;
+import com.udemy.entity.Address;
 import com.udemy.entity.Customer;
 import com.udemy.entity.Invoice;
 import com.udemy.form.InvoiceForm;
@@ -34,6 +35,8 @@ public class InvoiceControllerWeb {
         Invoice invoice = new Invoice();
         Customer customer = new Customer(invoiceForm.getCustomerName());
         invoice.setCustomer(customer);
+        Address address = new Address(invoiceForm.getStreetName(), invoiceForm.getStreetNumber(), invoiceForm.getCity(), invoiceForm.getZipCode(), invoiceForm.getCountry());
+        customer.setAddress(address);
         invoice.setOrderNumber(invoiceForm.getOrderNumber());
         service.createInvoice(invoice);
 

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
+    <list default="true" id="eb419e21-f819-4642-b1ea-1870dbee5261" name="Changes" comment="Spring Data JPA : Ajout de documentation méthodologique">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/repository/CustomerRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/controller/web/InvoiceControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/form/InvoiceForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-create-form.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,41 +61,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/src/main/java/com/udemy/entity&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/VILLISECK/IdeaProjects/Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3/documentation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\java\com\udemy\entity" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources" />
-      <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\documentation" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static\css" />
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5._Udemy_Formation_Spring_Boot_2022_v3\src\main\resources\static" />
     </key>
@@ -100,9 +107,9 @@
       <recent name="C:\Users\VILLISECK\IdeaProjects\Spring_Boot_2.1.5_Udemy_Formation_Spring_Boot_2022" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.udemy.repository" />
       <recent name="com.udemy.entity" />
       <recent name="com.udemy" />
-      <recent name="com.udemy.repository" />
       <recent name="com.udemy.service" />
     </key>
   </component>
@@ -182,22 +189,6 @@
       <workItem from="1697535314398" duration="1171000" />
       <workItem from="1697605160224" duration="8767000" />
       <workItem from="1697697991694" duration="676000" />
-    </task>
-    <task id="LOCAL-00038" summary="Test déploiement automatique">
-      <option name="closed" value="true" />
-      <created>1695906414442</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1695906414442</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Integration maven">
-      <option name="closed" value="true" />
-      <created>1695906754716</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1695906754716</updated>
     </task>
     <task id="LOCAL-00040" summary="minor changes">
       <option name="closed" value="true" />
@@ -575,7 +566,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697698656785</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Spring Data JPA : Desactivation de spring.jpa.open-in-view (recommandé)">
+      <option name="closed" value="true" />
+      <created>1697700597128</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1697700597128</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Spring Data JPA : Ajout de documentation méthodologique">
+      <option name="closed" value="true" />
+      <created>1697700710143</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1697700710143</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -600,8 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Vue : Formulaire de création de facture avec th:action&#10;Controller : Methode @RequestMapping avec RequestMethod.POST pour récupération des données de la vue&#10;1ere version" />
-    <MESSAGE value="Finalisation envoi de données via formulaire vue + controller" />
     <MESSAGE value="@Valid - ajout de la gestion des erreurs" />
     <MESSAGE value="@Valid - gestion des erreurs - routage sur page en cours si erreur" />
     <MESSAGE value="@Valid - Affichage de messages personnalisés d'erreurs sur les champs utilisateur" />
@@ -625,7 +630,9 @@
     <MESSAGE value="ECHEC: Spring Data JPA : Ajout d'entités et adaptation des controleurs : Notion d'Hibernate Proxy non prise en compte" />
     <MESSAGE value="Spring Data JPA : SOLUTION 1 : Utilisation de la méthode de nullification des proxys (Hibernate6Module)" />
     <MESSAGE value="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : SOLUTION 2 : Les fetch à priori dans les repository (Hibernate6Module)" />
+    <MESSAGE value="Spring Data JPA : Desactivation de spring.jpa.open-in-view (recommandé)" />
+    <MESSAGE value="Spring Data JPA : Ajout de documentation méthodologique" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA : Ajout de documentation méthodologique" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

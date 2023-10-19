@@ -1,6 +1,7 @@
 package com.udemy.service.number;
 
 import com.udemy.entity.Invoice;
+import com.udemy.repository.CustomerRepositoryInterface;
 import com.udemy.repository.InvoiceRepositoryInterface;
 import com.udemy.service.InvoiceServiceInterface;
 import org.hibernate.Hibernate;
@@ -11,20 +12,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     private final InvoiceRepositoryInterface invoiceRepository;
+    private final CustomerRepositoryInterface customerRepository;
 
     @Autowired
-    public InvoiceServiceNumber(@Qualifier("invoiceRepositoryInterface") InvoiceRepositoryInterface invoiceRepository) {
+    public InvoiceServiceNumber(@Qualifier("invoiceRepositoryInterface") InvoiceRepositoryInterface invoiceRepository,
+                                @Qualifier("customerRepositoryInterface") CustomerRepositoryInterface customerRepository) {
         this.invoiceRepository = invoiceRepository;
+        this.customerRepository = customerRepository;
     }
 
     public Invoice createInvoice(Invoice invoice){
+        customerRepository.save(invoice.getCustomer());
         return invoiceRepository.save(invoice);
     }
 
     @Override
     public Iterable<Invoice> getInvoiceList() {
-        //La jointure pour récupérer les informations de l'attribut enfant se fait dans la couche repository
-        //Je peux a nouveau utiliser un simple return
         return invoiceRepository.findAll();
     }
 
